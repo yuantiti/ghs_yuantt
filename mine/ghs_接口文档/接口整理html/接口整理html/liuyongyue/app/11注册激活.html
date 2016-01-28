@@ -1,0 +1,39 @@
+</html>
+<head>
+<meta http-equiv="content-type"content="text/html;charset=utf-8">
+</head>
+<pre>
+接口名称：注册新用户
+接口地址：<a href="http://ectest.huanqiugo.com/passport-app_create.html?mobile=13811522352&action=1">ectest.huanqiugo.com/passport-app_create.html?mobile=13811522352&password=xxxxxx&action=1</a>
+<a href="./test_post.html">测试页面./test_post.htm</a>
+提交方式 post
+
+请求参数：
+mobile=13811522352 手机号
+password=xxxxxx  用户密码，不加密
+code=382832	  手机短信验证码
+device_type
+
+返回结果：
+{
+  "code":1,
+  "message":"注册成功"
+  "data":{
+    "user_id":23423,
+    "nick_name":"昵称"
+    "mobile":"13811522352",
+    "gender":1,              -- 性别 0:女性，1:男性
+    "age":0,                    年龄
+    "avatar":"http://xxx.com/test.jpg",         -- 头像网址全路径
+    "email":"",
+    "level":1,
+    "login_type":0,                  -- 登录类型 0:本系统注册用户
+}
+
+}
+
+{
+  "code":0,
+  "message":"系统错误"
+}
+</html>

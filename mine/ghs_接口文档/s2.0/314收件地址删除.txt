@@ -1,0 +1,27 @@
+【说明】
+返回的内容都是json
+
+【接口名称】删除收件地址接口
+
+【接口地址】http://ectest.huanqiugo.com/member-app_addressDel.html?ship_id=111
+			http://testec.ghs.net/index.php/api?method=member-app_addressDel.html&ship_id=234&sign=446D942E7E583D678E82F9BE53E09F92
+【请求参数】
+ship_id =234//这个字段要注意一下和以前不一样了
+
+【返回数据】
+
+{
+	"data":"",//返回的数据都在这里处理
+	"rsp":"succ",//标记请求成功
+	"res":"E0D99131B6ACB984B168DDBE94D980AA"
+}
+
+//失败
+{
+	"data":{
+  		"message":"4334,32234,5445",
+		"status":false
+		},
+	"rsp":"fail",
+	"res":"E0D99131B6ACB984B168DDBE94D980AA"
+}

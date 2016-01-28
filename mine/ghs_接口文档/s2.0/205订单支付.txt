@@ -1,0 +1,42 @@
+【说明】
+
+【接口名称】订单支付接口
+
+【接口地址】/app/payInfo
+
+【请求参数】
+order_id=123
+order_no＝"123123"
+pay_type=7   //支付宝7  微信132
+
+【返回数据】
+
+支付宝返回实例:
+{
+  "code" : 1,
+  "data" : "partner=\"2088211179831306\"&seller_id=\"ghszfb@ghs.net\"&notify_url=\"http://m.ghs.net/App2/notify/1523668398\"&service=\"mobile.securitypay.pay\"&_input_charset=\"utf-8\"&payment_type=\"1\"&out_trade_no=\"1523668398\"&subject=\"环球购物www.GHS.net订单号:1523668398\"&body=\"订单描述\"&total_fee=\"399.00\"&sign=\"hSRiFmtTyjyDaAND%2FiWI4CHehLE2qPvPiNokqntmZeh5xhbKSZHmT%2BBEA8zwrHJpPYgQ9lhYXsDmtQ8c2UQpjhNiofKxx8nhSSWW3SSCDwOmKd5mryNTrlFCUSW3NGREPCk2LGXD9rnIMpmpNQUXCcFq3MrdH46bTKutHhNVfSY%3D\"&sign_type=\"RSA\"",
+  "message" : "成功"
+}
+
+银联返回实例:
+{
+  "code" : 1,
+  "data" : "201508251816147211878",
+  "message" : "成功"
+}
+
+
+微信返回实例:
+{
+  "code" : 1,
+  "data" : {
+    "appid" : "wx358b3a0857df5da6",
+    "noncestr" : "973h2zefy4yraa2lwolbzi0cxf4lxmrd",
+    "package" : "Sign=WXPay",
+    "partnerid" : "1236050201",
+    "paysign" : "C768B748274FCFE1346C15901E1D84E7",
+    "prepayid" : "wx201508251818383e33b9dee70579679685",
+    "timestamp" : "1440497858"
+  },
+  "message" : "成功"
+}

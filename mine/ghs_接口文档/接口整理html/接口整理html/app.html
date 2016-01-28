@@ -1,0 +1,213 @@
+<html>
+<head>
+ <meta http-equiv="content-type" content="text/html; charset=utf-8">
+ <script type="text/javascript" src="./jquery-1.8.3.js"></script>
+ <style>
+a{text-decoration:none;color:black}
+ 
+
+
+#box2{
+
+	width:400px;
+	background:#ddd;
+	float:right;
+	margin-right:300px;
+	
+}
+
+#box3{
+
+	width:400px;
+	background:#ddd;
+	float:right;
+	margin-right:40px;
+}
+
+
+</style>
+</head>
+
+
+
+<body>
+
+
+<div id="box2">
+商派(Sangpai)<br/>
+<b>订单相关</b><br/><br/>
+    <a href="http://www.ec-os.net/ecstore/append-a/b2c.order.iframe_url.html">(s-1)、b2c.order.iframe_url 外部订单编辑url地址获取</a><br/><br/>
+    <a href="http://www.ec-os.net/ecstore/append-a/b2c.payment.create.html">(s-2)、b2c.payment.create 添加订单支付单</a><br/><br/>
+    <a href="http://www.ec-os.net/ecstore/append-a/b2c.refund.create.html">(s-3)、b2c.refund.create 添加订单退款单</a><br/><br/>
+    <a href="http://www.ec-os.net/ecstore/append-a/b2c.delivery.create.html">(s-4)、b2c.delivery.create 添加发货单</a><br/><br/>
+    <a href="http://www.ec-os.net/ecstore/append-a/b2c.delivery.update.html">(s-5)、b2c.delivery.update 修改发货单</a><br/><br/>
+    <a href="http://www.ec-os.net/ecstore/append-a/b2c.reship.create.html">(s-6)、b2c.reship.create 添加退货单</a><br/><br/>
+    <a href="http://www.ec-os.net/ecstore/append-a/b2c.order.search.html">(s-7)、b2c.order.search 搜索订单</a><br/><br/>
+    <a href="http://www.ec-os.net/ecstore/append-a/b2c.order.detail.html">(s-8)、b2c.order.detail 查询订单详情</a><br/><br/>
+    <a href="http://www.ec-os.net/ecstore/append-a/b2c.order.remark.html">(s-9)、b2c.order.remark 修改订单备注</a><br/><br/>
+    <a href="http://www.ec-os.net/ecstore/append-a/b2c.order.leave_message.html">(s-10)、b2c.order.leave_message 添加订单买家留言</a><br/><br/>
+    <a href="http://www.ec-os.net/ecstore/append-a/b2c.order.status_update.html">(s-11)、b2c.order.status_update 修改订单状态</a><br/><br/>
+    <a href="http://www.ec-os.net/ecstore/append-a/b2c.order.ship_status_update.html">(s-12)、b2c.order.ship_status_update 订单发货状态更新接口</a><br/><br/>
+    <a href="http://www.ec-os.net/ecstore/append-a/order/b2c.order.check_cost.html">(s-13)、b2c.order.check_cost 确认订单价格统计接口</a><br/><br/>
+    <a href="http://www.ec-os.net/ecstore/append-a/order/b2c.order.get_wap_order_detail.html">(s-14)、b2c.order.get_wap_order_detail 订单详情接口 </a><br/><br/>
+
+<b>售后相关</b><br/>
+
+   <a href="http://www.ec-os.net/ecstore/append-a/b2c.aftersale.create.html">(s-21)、 b2c.aftersale.create 添加售后申请</a><br/><br/>
+   <a href="http://www.ec-os.net/ecstore/append-a/b2c.aftersale.update.html">(s-22)、 b2c.aftersale.update 修改售后申请 </a><br/><br/>
+
+<b>支付方式相关</b><br/>
+
+    <a href="http://www.ec-os.net/ecstore/append-a/ectools.get_payments.get_all.html">(s-33)、ectools.get_payments.get_all(获取所有支付方式) </a><br/><br/>
+
+<b>商品相关</b><br/>
+
+   <a href="http://www.ec-os.net/ecstore/append-a/b2c.update_store.updateStore.html">(s-41)、 b2c.update_store.updateStore 更新商品库存</a><br/><br/>
+    <a href="http://www.ec-os.net/ecstore/append-a/goods/b2c.goods.get_cat_list.html">(s-42)、b2c.goods.get_cat_list 根据商品分类ID获取下级
+	分类列表</a><br/><br/>
+   <a href="http://www.ec-os.net/ecstore/append-a/goods/b2c.goods.get_type_detial.html">(s-43)、 b2c.goods.get_type_detial 根据商品类型ID,获取
+	商品类型详情</a><br/><br/>
+   <a href="http://www.ec-os.net/ecstore/append-a/goods/b2c.goods.get_store.html">(s-44)、 b2c.goods.get_store 根据货品ID 查询货品库存</a><br/><br/>
+   <a href="http://www.ec-os.net/ecstore/append-a/goods/b2c.goods.get_lv_price.html">(s-45)、 b2c.goods.get_lv_price 根据货品ID 查询货品库存</a><br/><br/>
+   <a href="http://www.ec-os.net/ecstore/append-a/goods/b2c.goods.get_goods_intro.html">(s-46)、 b2c.goods.get_goods_intro 根据商品ID，查询商品
+	详情</a><br/><br/>
+    <a href="http://www.ec-os.net/ecstore/append-a/goods/b2c.goods.search_properties_goods.html">(s-47)、b2c.goods.search_properties_goods 根据筛选条
+	件查询商品</a><br/><br/>
+   <a href="http://www.ec-os.net/ecstore/append-a/goods/b2c.goods.get_goods_detail.html">(s-48)、 b2c.goods.get_goods_detail 根据货品ID获取单
+	个货品的详细信息</a><br/><br/>
+    <a href="http://www.ec-os.net/ecstore/append-a/brand/b2c.brand.get_brand_detail.html">(s-49)、b2c.brand.get_brand_detail 获取品牌数据(根据
+	品牌排序查询列表) </a><br/><br/>
+
+<b>会员相关</b><br/>
+
+    <a href="http://www.ec-os.net/ecstore/append-a/member/b2c.member.get_encrypt_params.html">(s-51)、b2c.member.get_encrypt_params 获取会员加密密码参数</a><br/><br/>
+    <a href="http://www.ec-os.net/ecstore/append-a/member/b2c.member.signin.html">(s-52)、b2c.member.signin 会员登录</a><br/><br/>
+    <a href="http://www.ec-os.net/ecstore/append-a/member/b2c.member.send_signup_sms.html">(s-53)、b2c.member.send_signup_sms 对注册的手机号发送验证码</a><br/><br/>
+    <a href="http://www.ec-os.net/ecstore/append-a/member/b2c.member.signup.html">(s-54)、b2c.member.signup 会员注册接口</a><br/><br/>
+    <a href="http://www.ec-os.net/ecstore/append-a/member/b2c.member.change_password.html">(s-55)、b2c.member.change_password 会员修改密码</a><br/><br/>
+    <a href="http://www.ec-os.net/ecstore/append-a/member/b2c.member.lost_send_vcode.html">(s-56)、b2c.member.lost_send_vcode 找回密码1，根据手机号码发送验证码</a><br/><br/>
+    <a href="http://www.ec-os.net/ecstore/append-a/member/b2c.member.lost_verify_vcode.html">(s-57)、b2c.member.lost_verify_vcode 找回密码2，验证码验证</a><br/><br/>
+    <a href="http://www.ec-os.net/ecstore/append-a/member/b2c.member.lost_reset_password.html">(s-58)、b2c.member.lost_reset_password 找回密码3，设定新密码 
+	，并进行修改密码后续操作（发送短信或邮件）</a><br/><br/>
+   <a href="http://www.ec-os.net/ecstore/append-a/member/b2c.member.get_cart_info.html">(s-59)、 b2c.member.get_cart_info 根据会员ID获取购物车信息</a><br/><br/>
+   <a href="http://www.ec-os.net/ecstore/append-a/member/b2c.member.add_cart.html">(s-60)、 b2c.member.add_cart 保存会员新添加的购物车信息</a><br/><br/>
+    <a href="http://www.ec-os.net/ecstore/append-a/member/b2c.member.update_cart.html">(s-61)、b2c.member.update_cart 更新购物车信息购物车信息</a><br/><br/>
+    <a href="http://www.ec-os.net/ecstore/append-a/member/b2c.member.remove_cart.html">(s-62)、b2c.member.remove_cart 清除购物车信息购物车信息</a><br/><br/>
+   <a href="http://www.ec-os.net/ecstore/append-a/member/b2c.member.save_address.html">(s-63)、 b2c.member.save_address 保存会员新建/编辑的收货地址</a><br/><br/>
+    <a href="http://www.ec-os.net/ecstore/append-a/member/b2c.member.get_address.html">(s-64)、b2c.member.get_address 根据会员查询收货地址</a><br/><br/>
+   <a href="http://www.ec-os.net/ecstore/append-a/member/b2c.member.get_member_info.html">(s-65)、 b2c.member.get_member_info 用户基本信息查询</a><br/><br/>
+   <a href="http://www.ec-os.net/ecstore/append-a/member/b2c.member.get_fav.html">(s-66)、 b2c.member.get_fav 根据用户id获取商品收藏列表</a><br/><br/>
+   <a href="http://www.ec-os.net/ecstore/append-a/member/b2c.member.get_order_list.html">(s-67)、 b2c.member.get_order_list 根据用户id调取其订单列表
+	，按照下单时间降序排序</a><br/><br/>
+    <a href="http://www.ec-os.net/ecstore/append-a/member/b2c.member.add_comments.html">(s-68)、b2c.member.add_comments 发表评论</a><br/><br/>
+   <a href="http://www.ec-os.net/ecstore/append-a/member/b2c.member.is_discuss.html">(s-69)、 b2c.member.is_discuss 根据商品ID判断时候能进行评论</a><br/><br/>
+    <a href="http://www.ec-os.net/ecstore/append-a/member/b2c.member.get_cat_comments.html">(s-70)、b2c.member.get_cat_comments 根据商品ID获取评论列表</a><br/><br/>
+   <a href="http://www.ec-os.net/ecstore/append-a/member/b2c.member.get_point_params.html">(s-71)、 b2c.member.get_point_params 获取商品评论的评分参数 </a><br/><br/>
+
+此线一下部分尚未认证 有此需求 发邮件给 zling@shopex.cn<br/>
+
+  <a href="http://www.ec-os.net/ecstore/append-a/goods/b2c.goods.add.html">(s-72)、  b2c.goods.add 添加商品</a><br/><br/>
+   <a href="http://www.ec-os.net/ecstore/append-a/goods/b2c.goods.delete.html">(s-73)、 b2c.goods.delete 删除单个商品信息</a><br/><br/>  </a><br/><br/>
+   <a href="http://www.ec-os.net/ecstore/append-a/goods/b2c.goods.get_all_list.html">(s-74)、 b2c.goods.get_all_list 获取商品列表信息</a><br/><br/>
+   <a href="http://www.ec-os.net/ecstore/append-a/goods/b2c.goods.get_brands.html">(s-75)、 b2c.goods.get_brands 获取品牌信息</a><br/><br/>
+   <a href="http://www.ec-os.net/ecstore/append-a/goods/b2c.goods.get_cat.html">(s-76)、 b2c.goods.get_cat 获取分类信息</a><br/><br/>
+   <a href="http://www.ec-os.net/ecstore/append-a/goods/b2c.goods.get_item.html">(s-77)、 b2c.goods.get_item 获取单个商品信息</a><br/><br/>
+    <a href="http://www.ec-os.net/ecstore/append-a/goods/b2c.goods.get_sku.html">(s-78)、b2c.goods.get_sku 获取单个货品信息</a><br/><br/>
+   <a href="http://www.ec-os.net/ecstore/append-a/goods/b2c.goods.get_specs.html">(s-79)、 b2c.goods.get_specs 获取规格信息</a><br/><br/>
+    <a href="http://www.ec-os.net/ecstore/append-a/goods/b2c.goods.get_types.html">(s-80)、b2c.goods.get_types 获取类型信息</a><br/><br/>
+    <a href="http://www.ec-os.net/ecstore/append-a/goods/b2c.goods.getAllProductsStore.html">(s-81)、b2c.goods.getAllProductsStore 获取所有货品的货号和库存</a><br/><br/>
+   <a href="http://www.ec-os.net/ecstore/append-a/goods/b2c.goods.update.html">(s-82)、b2c.goods.update 更新商品</a><br/><br/>
+   <a href="http://www.ec-os.net/ecstore/append-a/goods/b2c.goods.update_sku.html">(s-83) b2c.goods.update_sku 更新单个货品信息</a><br/><br/>
+
+<b>会员相关</b><br/>
+
+   <a href="http://www.ec-os.net/ecstore/append-a/goods/b2c.member.add.html">(s-91)、 b2c.member.add 新增会员</a><br/><br/>
+    <a href="http://www.ec-os.net/ecstore/append-a/goods/b2c.member.get_member.html">(s-92)、b2c.member.get_member 获取会员详细</a><br/><br/>
+   <a href="http://www.ec-os.net/ecstore/append-a/goods/b2c.member.get_member_by_name.html">(s-93)、 b2c.member.get_member_by_name 根据会员名（登
+	陆账号）获取会员详细</a><br/><br/>
+   <a href="http://www.ec-os.net/ecstore/append-a/goods/b2c.member.get_member_filter.html">(s-94)、 b2c.member.get_member_filter 获取会员列表</a><br/><br/>
+    <a href="http://www.ec-os.net/ecstore/append-a/goods/b2c.member.get_member_lv_all.html">(s-95)、b2c.member.get_member_lv_all 获取会员等级列表 </a><br/><br/>
+
+<b>其他</b><br/><br/>
+
+    <a href="http://www.ec-os.net/ecstore/append-a/b2c.order.update_items.html">(s-96)、b2c.order.update_items 修改订单明细信息</a><br/><br/></br>
+</div>
+
+<div id="box3">
+刘勇悦(Liuyongyue)<br/>
+<b>新接口</b><br/><br/>
+   <a href="./liuyongyue/app/10发送短信验证码.html">(y-1)、10发送短信验证码</a><br/><br/>
+   <a href="./liuyongyue/app/11注册激活.html">(y-2)、11注册激活</a><br/><br/>
+   <a href="./liuyongyue/app/12用户登录.html">(y-3)、12用户登录</a><br/><br/>
+   <a href="./liuyongyue/app/13用户详情.html">(y-4)、13用户详情.html</a><br/><br/>
+   <a href="./liuyongyue/app/14用户信息更新.html">(y-5)、14用户信息更新</a><br/><br/>
+   <a href="./liuyongyue/app/15重置密码-验证身份.html">(y-6)、15重置密码-验证身份</a><br/><br/>
+   <a href="./liuyongyue/app/16重置密码-发送电子邮件.html">(y-7)、16重置密码-发送电子邮件</a><br/><br/>
+   <a href="./liuyongyue/app/17重置密码-验证手机验证码.html">(y-8)、17重置密码-验证手机验证码</a><br/><br/>
+   <a href="./liuyongyue/app/18重置密码-修改密码.html">(y-9)、18重置密码-修改密码</a><br/><br/>
+   <a href="./liuyongyue/app/22团购接口.html">(y-15)、22团购接口</a> <br/><br/>
+   <a href="./liuyongyue/app/31直播节目表.html">(y-16)、31直播节目表</a> <br/><br/>
+   <a href="./liuyongyue/app/40商品分类.html">(y-17)、40商品分类</a> <br/><br/>
+   <a href="./liuyongyue/app/41商品列表.html">(y-18)、41商品列表</a> <br/><br/>
+   <a href="./liuyongyue/app/42商品详情___________b.html">(y-19)、42商品详情___________b</a> <br/><br/>
+   <a href="./liuyongyue/app/43商品搜索.html">(y-20)、43商品搜索</a> <br/><br/>
+   <a href="./liuyongyue/app/44商品关注与取消.html">(y-21)、44商品关注与取消</a> <br/><br/>
+   <a href="./liuyongyue/app/45关注商品列表.html">(y-22)、45关注商品列表</a> <br/><br/>
+   <a href="./liuyongyue/app/50订单列表.html">(y-23)、50订单列表</a> <br/><br/>
+   <a href="./liuyongyue/app/51订单详情.html">(y-24)、51订单详情</a> <br/><br/>
+   <a href="./liuyongyue/app/60购物车详情.html">(y-28)、60购物车详情</a> <br/><br/>
+   <a href="./liuyongyue/app/61购物车新增商品.html">(y-29)、61购物车新增商品</a> <br/><br/>
+   <a href="./liuyongyue/app/62购物车商品数量修改.html">(y-30)、62购物车商品数量修改</a> <br/><br/>
+   <a href="./liuyongyue/app/63购物车删除商品.html">(y-31)、63购物车删除商品</a> <br/><br/>
+   <a href="./liuyongyue/app/70收件地址列表.html">(y-32)、70收件地址列表</a> <br/><br/>
+   <a href="./liuyongyue/app/71收件地址新增_________b.html">(y-33)、71收件地址新增_________b</a> <br/><br/>
+   <a href="./liuyongyue/app/72收件地址删除.html">(y-34)、72收件地址删除</a> <br/><br/>
+   <a href="./liuyongyue/app/80物流查询__________b.html">(y-35)、80物流查询__________b</a> <br/><br/>
+   <a href="./liuyongyue/app/B2用户注销.html">(y-40)、B2用户注销</a> <br/><br/>
+   
+   <b>老接口</b><br/><br/>
+   <a href="./liuyongyue/app/20首页焦点.html">old(y-10)、20首页焦点.html</a><br/><br/>
+   <a href="./liuyongyue/app/21首页广告接口.html">old(y-11)、21首页广告接口</a><br/><br/>
+   <a href="./liuyongyue/app/21首页直播商品.html">old(y-12)、21首页直播商品</a><br/><br/>
+   <a href="./liuyongyue/app/22首页推荐商品.html">old(y-13)、22首页推荐商品</a><br/><br/>
+   <a href="./liuyongyue/app/22首页直播商品.html">old(y-14)、22首页直播商品</a><br/><br/>
+    <a href="./liuyongyue/app/52订单创建.html">old(y-25)、52订单创建</a> <br/><br/>
+   <a href="./liuyongyue/app/53取消订单.html">old(y-26)、53取消订单</a> <br/><br/>
+   <a href="./liuyongyue/app/60版本更新.html">old(y-27)、60版本更新</a> <br/><br/>
+    <a href="./liuyongyue/app/90支付接口.html">old(y-36)、90支付接口</a> <br/><br/>
+   <a href="./liuyongyue/app/A0版本更新.html">old(y-37)、A0版本更新</a> <br/><br/>
+   <a href="./liuyongyue/app/A1专题详情.html">old(y-38)、A1专题详情</a> <br/><br/>
+   <a href="./liuyongyue/app/B1用户设备登记.html">old(y-39)、B1用户设备登记</a> <br/><br/>
+   <a href="./liuyongyue/app/C1用户账户查询.html">old(y-41)、C1用户账户查询</a> <br/><br/>
+   <a href="./liuyongyue/app/C2礼金券校验.html">old(y-42)、C2礼金券校验</a> <br/><br/>
+   <a href="./liuyongyue/app/Web专题技术规范.html">old(y-43)、Web专题技术规范</a> <br/><br/>
+  
+</div>
+</body>
+<script>
+	$('a').toggle(function(){
+		
+		$(this).css('color','red');
+		var b = $(this).attr('href');
+		location.href= b;
+		
+	},
+	function(){		
+		$(this).css('color','blue');
+		var b = $(this).attr('href');
+		location.href= b;
+	},
+	function(){
+		$(this).css('color','green');
+		var b = $(this).attr('href');
+		location.href= b;
+	},
+	function(){
+		$(this).css('color','purple');
+		var b = $(this).attr('href');
+		location.href= b;
+	}
+	
+	)
+</script>
+</html>

@@ -1,0 +1,77 @@
+﻿【说明】
+参见b2c.member.get_order_list
+
+【接口名称】订单列表接口
+
+【接口地址】
+
+【请求参数】
+参数	类型	是否必须	说明
+member_id	int	Y	会员ID
+accesstoken	string	Y	会员登录返回的 accesstoken
+page_no	string	N	页码 默认1
+page_size	string	N	分页大小  
+
+【返回数据】
+{
+    "rsp": "succ", 
+    "data": {
+        "orderData": [
+            {
+                "order_id": "150407153134067", 
+                "itemnum": "1", 
+                "amount": "408.000", 
+                "createtime": "1428391889", 
+                "pay_status": "未支付", 
+                "ship_status": "未发货", 
+                "status": "活动订单", 
+				//新增
+				"id":"444", 订单ID
+                "item": [
+                    {
+                        "goods_id": "93", 
+                        "product_id": "545", 
+                        "goods_name": "CLINIQUE 倩碧 旅行套装", 
+                        "spec_info": "null", 
+                        "quantity": "1", 
+                        "item_type": "product", 
+                        "goods_pic": {
+                            "s_url": "http://pic.shopex.cn/pictures/eimages/4a47ca168051ce3d20c50f96ccbf61a054353ccfbb.png", 
+                            "m_url": "http://pic.shopex.cn/pictures/eimages/1a2a69af158fc2e6e87e54bf7448e4ff5ee2e26f4a.png", 
+                            "l_url": "http://pic.shopex.cn/pictures/eimages/d2594f5743e21c38d7a4290e43abea2f6a6db68112.png"
+                        }
+						
+						//新增
+						 "price":299
+                    }
+                ]
+            }, 
+            {
+                "order_id": "150407153160423", 
+                "itemnum": "1", 
+                "amount": "208.000", 
+                "createtime": "1428391868", 
+                "pay_status": "未支付", 
+                "ship_status": "未发货", 
+                "status": "活动订单", 
+                "item": [
+                    {
+                        "goods_id": "85", 
+                        "product_id": "537", 
+                        "goods_name": "AVENE 雅漾 舒活保湿面膜 50ml", 
+                        "spec_info": "null", 
+                        "quantity": "1", 
+                        "item_type": "product", 
+                        "goods_pic": {
+                            "s_url": "http://pic.shopex.cn/pictures/eimages/9da861e5e2f0098b6ae95f55e8268d6ffa703b0dfe.png", 
+                            "m_url": "http://pic.shopex.cn/pictures/eimages/5189d008c0b7fe50d62b253a90825fd33524bb9a54.png", 
+                            "l_url": "http://pic.shopex.cn/pictures/eimages/53c6e2cd1d1003f3082f19ab75f59ce9c15c275b9b.png"
+                        }
+                    }
+                ]
+            }
+        ], 
+        "pager_total": "1"
+    }, 
+    "res": "15F9ED02ACC99E1E2FC4EC97A084CFA9"
+}

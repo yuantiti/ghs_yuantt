@@ -1,0 +1,19 @@
+【说明】
+参见b2c.order.status_update 修改订单状态
+//有问题待解决,区分dead(死单)的具体情况
+
+【接口名称】取消订单接口
+
+【接口地址】
+
+【请求参数】
+名称	类型	是否必需	描述	示例
+order_id	String	Y	订单编号(交易ID)	20111111154444
+status	Number	Y	交易状态。可选值：active(活单) dead(死单) finish(完成)	active
+
+【返回数据】
+ {
+    'rsp':'succ',
+    'data':{'tid':'20111111154444'},
+    'res':""
+}

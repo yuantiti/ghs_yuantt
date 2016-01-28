@@ -1,0 +1,54 @@
+【说明】
+
+【接口名称】商品详情接口
+
+【接口地址】/app/productBaseInfo
+
+【请求参数】
+ merchant_id=123   //商品ID
+ sku=35456         //货品ID
+ 
+【返回数据】
+
+product-app_productBaseInfo.html?merchant_id=123&sku=35456
+
+{
+  "data" : {
+    "brief" : "null",
+    "goods_id" : "93",
+    "marked_price" : "477.6",
+    "price" : "398.000",
+    "store" : "93",//这个字段名字需要改一下
+    "name" : "CLINIQUE 倩碧 旅行套装",
+	
+//以下是新增字段
+    "images" : [
+      "http://test.com/1.png",
+      "http://test.com/2.png"
+    ],
+
+    "spe" : [
+      {
+        "id" : 1,//货品id
+        "name" : "绿色XL"
+      },
+      {
+        "id" : 2,
+        "name" : "红色XL"
+      },
+      {
+        "id" : 3,
+        "name" : "红色XXL"
+      }
+    ],
+    "favorite" : 0,//收藏,1是收藏
+    "is_live" : 0,//当前商品是否在直播,1是
+    "gift" : "赠品",
+    "url" : "http://test.com/1.html"//新版的需要给出来
+    "shipping_fee" : 0,//运费信息
+    "sku" : "9100357"
+
+  },
+  "res" : "null",
+  "rsp" : "succ"
+}

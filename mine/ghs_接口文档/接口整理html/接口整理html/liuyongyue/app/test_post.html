@@ -1,0 +1,218 @@
+<html>
+  <meta charset="utf-8">
+<body>
+验证会员名<br>
+<form action="http://ectest.huanqiugo.com/passport-check_user.html" method="POST">
+<input type="text" name="account" value="13466687913">
+<input type="text" name="code" value="1234">
+<input type="submit" value="ok">
+</form>
+<br>
+通过发送电子邮件的方式<br>
+<form action="http://ectest.huanqiugo.com/passport-app_send_email.html" method="POST">
+<input type="text" name="account" value="13466687913">
+<input type="text" name="code" value="1234">
+<input type="submit" value="ok">
+</form><br>
+发送手机验证码<br>
+<form action="http://ectest.huanqiugo.com/passport-app_send_vcode_sms.html" method="POST">
+<input type="text" name="mobile" value="13120318263">
+<input type="text" name="action" value="1">
+<input type="submit" value="ok">
+</form>
+<br>
+重置密码，验证手机验证码<br>
+<form action="http://ectest.huanqiugo.com/passport-app_resetpwd_code.html" method="POST">
+<input type="text" name="mobile" value="13120318263">
+<input type="text" name="code" value="">
+<input type="submit" value="ok">
+</form>
+<br>
+重置密码，手机<br>
+<form action="http://ectest.huanqiugo.com/passport-app_resetpassword.html" method="POST">
+<input type="text" name="mobile" value="13120318263">
+passwd:<input type="text" name="password" value="">
+passwd2:<input type="text" name="password2" value="">
+code:
+<input type="text" name="code" value="">
+<input type="submit" value="ok">
+</form>
+<br>
+用户注册<br>
+<form action="http://ectest.huanqiugo.com/passport-app_create.html" method="POST">
+<input type="text" name="mobile" value="13120318263">
+passwd:<input type="text" name="password" value="123123">
+<input type="text" name="code" value="">
+<input type="submit" value="ok">
+</form>
+<br>
+<br>
+用户登录<br>
+<form action="http://ectest.huanqiugo.com/passport-app_login.html" method="POST">
+<input type="text" name="user_id" value="13120318263">
+passwd:<input type="text" name="password" value="">
+<input type="submit" value="ok">
+</form>
+<br>
+用户详细信息<br>
+<form action="http://ectest.huanqiugo.com/passport-app_userdetail.html" method="POST">
+<input type="text" name="user_id" value="42201">
+<input type="submit" value="ok">
+</form>
+<br>
+用户注销<br>
+<form action="http://ectest.huanqiugo.com/passport-app_usr_logout.html" method="POST">
+<input type="text" name="user_id" value="42201">
+<input type="text" name="device_id" value="ASDSDFSDSDF">
+<input type="submit" value="ok">
+</form>
+<br>
+----收件地址-----
+<br>
+<br>
+收件地址列表<br>
+<form action="http://ectest.huanqiugo.com/member-app_Address.html" method="POST">
+<input type="text" name="user_id" value="42201">
+<input type="submit" value="ok">
+</form>
+
+<br>
+增加收件地址<br>
+<form action="http://ectest.huanqiugo.com/member-app_addressAdd.html" method="POST">
+<input type="text" name="real_name" value="abc">
+<input type="text" name="address" value="abcdcefedeee">
+<input type="text" name="telephone" value="13111231234">
+<input type="text" name="city" value="1">
+<input type="text" name="district" value="2">
+<input type="text" name="address" value="3">
+<input type="submit" value="ok">
+</form>
+<br>
+删除收件地址<br>
+<form action="http://ectest.huanqiugo.com/member-app_addressDel.html" method="POST">
+<input type="text" name="address_id" value="188">
+<input type="submit" value="ok">
+</form>
+<br>
+----购物车-----<br>
+<br>
+购物车详情<br>
+<form action="http://ectest.huanqiugo.com/cart-app_cart.html" method="POST">
+<input type="text" name="user_id" value="42201">
+<input type="submit" value="ok">
+</form>
+<br>
+购物车增加<br>
+<form action="http://ectest.huanqiugo.com/cart-app_cartAdd-goods.html" method="post">
+<input type="text" name="sku" value="2439">
+<!--<input type="text" name="goods[product_id]" value="15907">-->
+<input type="text" name="spec_id" value="9106169-0-0">
+<input type="text" name="count" value="1">
+<input type="submit" value="ok">
+</form>
+<br>
+购物车修改商品数量<br>
+<form action="http://ectest.huanqiugo.com/cart-app_cartChange.html" method="post">
+<input type="text" name="cart_id" value="goods_2439_15907">
+<input type="text" name="count" value="9">
+<input type="submit" value="ok">
+</form>
+<br>
+购物车删除商品<br>
+<form action="http://ectest.huanqiugo.com/cart-app_cartDelete.html" method="post">
+<input type="text" name="cart_id" value="goods_2439_15907">
+<input type="text" name="clear" value="1">
+<input type="submit" value="ok">
+</form>
+
+<br>
+----节目表-----<br>
+<br>
+节目表<br>
+<form action="http://ectest.huanqiugo.com/tvshop-app_tvtable.html" method="POST">
+tv_area:<input type="text" name="tv_area" value="0">
+tv_area:<input type="text" name="tvdate" value="2015-07-17">
+<input type="submit" value="ok">		tv_area:0全国 1北京
+</form>
+<br><br>
+----节目表-----<br>
+<br>
+物流查询<br>
+<form action="http://ectest.huanqiugo.com/index.php/ghsapi/wuliuapi/app_orderForm/" method="POST">
+order_no:<input type="text" name="order_no" value="0">
+<input type="submit" value="ok">
+</form>
+<br>
+----商品-----<br>
+<br>
+获取商品分类<br>
+<form action="http://localhost/localhost/product-app_getCategory.html" method="POST">
+<input type="submit" value="ok">
+</form>
+<br><br>
+获取商品列表<br>
+<form action="http://localhost/localhost/gallery-app_productList.html" method="POST">
+catid<input type="text" name="category_id" value="14">
+search_key<input type="text" name="search_key" value="0">
+order_key<input type="text" name="order_key" value="0">
+<input type="submit" value="ok">
+</form>
+<br><br>
+获取商品信息<br>
+<form action="http://ectest.huanqiugo.com/product-app_productBaseInfo.html" method="POST">
+merchant_id<input type="text" name="merchant_id" value="16118">
+sku<input type="text" name="sku" value="0">
+<input type="submit" value="ok">
+</form>
+<br><br>
+获取商品搜索列表<br>
+<form action="http://ectest.huanqiugo.com/gallery-app_searchProduct.html" method="POST">
+search_key<input type="text" name="search_key" value="经典大容量百">
+order_key<input type="text" name="order_key" value="0">
+<input type="submit" value="ok">
+</form>
+<br>
+<br>
+获取商品关注<br>
+<form action="http://ectest.huanqiugo.com/product-app_favorite.html" method="POST">
+sku<input type="text" name="sku" value="2680">
+favorite<input type="text" name="favorite" value="1">
+user_id:<input type="text" name="user_id" value="42201">
+<input type="submit" value="ok">
+</form>
+<br>
+<br>
+取消商品关注<br>
+<form action="http://ectest.huanqiugo.com/product-app_favorite.html" method="POST">
+sku<input type="text" name="sku" value="2680">
+favorite<input type="text" name="favorite" value="0">
+user_id:<input type="text" name="user_id" value="42201">
+<input type="submit" value="ok">
+</form>
+<br>
+<br>
+商品关注列表<br>
+<form action="http://ectest.huanqiugo.com/product-app_favorite_list.html" method="POST">
+user_id:<input type="text" name="user_id" value="42201">
+<input type="submit" value="ok">
+</form>
+<br>
+----订单-----<br>
+<br>
+订单列表<br>
+<form action="http://ectest.huanqiugo.com/member-app_orderlist.html" method="POST">
+user_id:<input type="text" name="user_id" value="42201">
+last_id:<input type="text" name="last_id" value="0">
+<input type="submit" value="ok">
+</form>
+<br>
+----订单-----<br>
+<br>
+订单详细<br>
+<form action="http://ectest.huanqiugo.com/member-app_orderdetail.html" method="POST">
+order_id:<input type="text" name="order_id" value="150723171016817">
+order_no:<input type="text" name="order_no" value="150723171016817">
+<input type="submit" value="ok">
+</form>
+
+</html>

@@ -1,0 +1,89 @@
+﻿</html>
+<head>
+<meta http-equiv="content-type"content="text/html;charset=utf-8">
+</head>
+<pre>
+接口名称：预存款\礼金\礼金券  查询接口
+接口地址：<a href="http://122.11.49.7:8000/app2/personalAccountQuery.html?user_id=12312&device_type=iPhone">http://122.11.49.7:8000/app2/personalAccountQuery?user_id=12312&device_type=iPhone</a>
+
+请求参数：
+user_id=12312
+device_type=iPhone
+
+接口说明:由于礼金得到的时间不一定一样,也就是说到期时间不一样,所以每一个礼金都分开返回来
+在使用的时候根据面额,有效期,使用状态来区分.
+
+返回结果：
+{
+    "code": 1,
+    "data": [
+        {
+            "account": "4500.00",
+            "description": "暂存款",
+            "type": 0
+        },
+        {
+            "account": "5100.00",
+            "description": "储值金",
+            "type": 1
+        },
+        {
+            "id": 1711,//礼金id 使用礼金的时候用这个id
+			"type": 2,//表示是礼金
+            "description": "礼金",            	
+            "ljAmt": 50.00  //礼金金额
+            "ljSeq": 1 ,   //礼金LD流水号不用管不在客户端显示
+            "event_id":1001417 , //活动编号不用管不在客户端显示
+            "event_nm": "六一促销（ec）" , //礼金内容
+            "fr_date": 1432310400 , //开始时间
+            "end_date": 1434988799 , //结束时间
+            "sy_vl": "未使用", //礼券状态
+            "when_created": 1434610386 , //建立时间
+            "when_modified": , //修改时间
+        },
+        {
+            "description": "礼金",
+            "end_date": 1434988799,
+            "event_id": 1001417,
+            "event_nm": "六一促销（ec）",
+            "fr_date": 1432310400,
+            "ljAmt": "30.00",
+            "ljSeq": 2,
+            "sy_vl": "使用",
+            "type": 2,
+            "when_created": 1434535445,
+            "when_modified": ""
+        },
+        {
+            "description": "礼金",
+            "end_date": 1434988799,
+            "event_id": 1001417,
+            "event_nm": "六一促销（ec）",
+            "fr_date": 1432310400,
+            "ljAmt": "20.00",
+            "ljSeq": 3,
+            "sy_vl": "未使用",
+            "type": 2,
+            "when_created": 1434535445,
+            "when_modified": ""
+        }
+    ],
+    "message": "成功"
+}
+
+
+{
+  "code":1100,
+  "message":"没有接收到用户id"
+}
+
+{
+  "code":1101,
+  "message":"用户id不存在"
+}
+
+{
+  "code":0,
+  "message":"错误"
+}
+</html>

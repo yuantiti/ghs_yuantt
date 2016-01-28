@@ -1,0 +1,49 @@
+</html>
+<head>
+<meta http-equiv="content-type"content="text/html;charset=utf-8">
+</head>
+<pre>
+接口名称：团购
+接口地址：<a href="http://122.11.49.7:8000/app2/tuangou?widgets_typ=ghs_huanqiutuan_goods_ex_list">http://122.11.49.7:8000/app2/tuangou</a>
+<a href="./test_post.html">测试页面./test_post.htm</a>
+说明：不翻页，一次全部加载
+
+
+
+SELECT * FROM `sdb_site_widgets_instance` WHERE 
+widgets_type = 'ghs_huanqiutuan_goods_ex_list' 
+AND CORE_FILE = 'haitao/index.html'
+
+返回结果：
+{
+  "code":1,
+  "message":"成功"
+  "data":
+  [
+     {
+        "sku":"123123",
+        "description":"钻石技术锅升级套组",   商品名称
+		"time":"121323123",	//剩余时间 为方便控制样式提供时间戳，需要加样式并处理成天、时，分，秒
+		"marked_price":123.78,   参考价
+        "price":98.99,     环球价
+        "image":"http://test.com/123.jpg",  首页焦点展示用的图  推荐尺寸640x220最重要的宽高比不变
+        "salsecount": 100       参团人数
+     },
+     {
+        "sku":"123123",
+        "description":"钻石技术锅升级套组",   商品名称
+		"time":"剩4天",	
+		"marked_price":123.78,   参考价
+        "price":98.99,     环球价
+        "image":"http://test.com/123.jpg",  首页焦点展示用的图  推荐尺寸640x220最重要的宽高比不变
+        "salsecount": 100       参团人数
+     }
+  ]
+}
+
+
+{
+  "code":0,
+  "message":"错误"
+}
+</html>

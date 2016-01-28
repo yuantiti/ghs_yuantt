@@ -1,0 +1,37 @@
+</html>
+<head>
+<meta http-equiv="content-type"content="text/html;charset=utf-8">
+</head>
+<pre>
+接口名称：用户修改个人信息
+接口地址：<a href="http://122.11.49.7:8000/user/update">http://122.11.49.7:8000/user/update?nick_name=逍遥一狂</a>
+<a href="./test_post.html">测试页面./test_post.htm</a>
+请求参数：
+
+下面是可以更新的字段
+
+"nick_name":"逍遥一狂",
+"avatar":  form文件上传方式提交   大图，640x640
+
+"gender":1,                      -- 性别 2:女性，1:男性
+"age":25,                    年龄
+"email":"majianglin@163.com",
+
+
+返回结果：
+{
+  "code":1,
+  "message":"成功"
+  "data":{
+    "user_id":23423,
+    "nick_name":"昵称"
+    "mobile":"13811522352",
+    "gender":1,              -- 性别 0:女性，1:男性
+    "age":0,                    年龄
+    "avatar":"http://xxx.com/test.jpg",         -- 头像网址全路径
+    "email":"",
+    "level":1,
+    "login_type":0,                  -- 登录类型 0:本系统注册用户
+}
+}
+</html>

@@ -1,0 +1,24 @@
+﻿【说明】
+参见 b2c.member.change_password
+
+【接口名称】会员修改密码接口
+
+【接口地址】
+			http://testec.ghs.net/index.php/api?method=b2c.member.change_password&member_id=123&sign=CAEA503DAB334D7586C136DEE15F867F
+【请求参数】
+参数	类型	是否必须	说明
+member_id	int	Y	修改用户的会员ID
+password_old	string	Y	修改会员的密码（加密过后的密码）
+password_new	string	Y	新密码（加密过后的密码）
+
+【返回数据】
+{
+    "data": {
+        "message": "密码修改成功", 
+        "status": "true"
+    }, 
+    "res": "succ"
+}
+
+
+

@@ -1,0 +1,25 @@
+接口名称：取消订单
+接口地址：/app2/ordercancel
+
+请求参数：
+order_id=123   //订单id
+order_no＝"123123”   // 订单号
+
+
+返回结果：
+{
+  "code":1,
+  "message":"成功"
+  "data":
+    {
+       "id":444, 订单ID
+       "order_no":"123123", 订单号
+       "time":"2014-08-17 22:23",
+       "status":1,               订单状态
+   }
+}
+
+{
+  "code":0,
+  "message":"错误"
+}

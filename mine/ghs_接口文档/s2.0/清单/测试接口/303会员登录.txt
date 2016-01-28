@@ -1,0 +1,86 @@
+测试地址http://localhost/index.php/api?method=b2c.member.signin&uname=18611877823&password=zhwzhw&sign=E7939BFA0FF38F904CF71814405B775E
+stoken 码   $token = 'f636f9f48eeeead453289e5254e37067a3ee934bc0340386d9b7c9f544bfbc3d';
+
+成功返回
+{
+    "rsp": "succ",
+    "data": {
+        "status": "true",
+        "member_id": "42270",
+        "accesstoken": "ac81389d9cd7b71fe96c177c42569b70",
+        "member_lv_id": "10",
+        "name": null,
+        "mobile": "18611877823",
+        "sex": "1",
+        "b_year": null,
+        "b_month": null,
+        "b_day": null,
+        "avatar": null,
+        "message": "登录成功"
+    },
+    "res": ""
+}
+
+失败返回  
+地址  http://localhost/index.php/api?method=b2c.member.signin&uname=18611877823&sign=6973442F714BE2D9FF5DB7F9E4D17778
+  {
+    "rsp": "succ",
+    "data": {
+        "status": "false",
+        "message": "用户密码错误，请从新输入"
+    },
+    "res": ""
+}
+
+地址二  
+http://localhost/index.php/api?method=b2c.member.signin&uname=18611877828&password=zhwzhw&sign=492227A9CE8E709BB0770E442F120C57
+{
+    "rsp": "succ",
+    "data": {
+        "status": "false",
+        "message": "用户名错误，请从新输入"
+    },
+    "res": ""
+}
+
+【说明】
+参见 b2c.member.signin 
+
+【接口名称】会员登录接口
+
+【接口地址】
+
+【请求参数】
+参数	类型	是否必须	说明
+uname	string	Y	登录用户名或手机号或邮箱
+password	string	Y	加密过后的密码
+
+【返回数据】
+
+{
+    "data": {
+        "accesstoken": "972b22d645ef8c2025499b6dd77596d7",        //在哪里
+        "member_id": "10", 
+        "message": "登录成功", 
+        "status": "true"
+		
+	//新增
+	"nick_name":"昵称"//这个值为null的话会返回账号          // name
+	"mobile":"13811522352",                                  //  mobile
+	"gender":1,              -- 性别 0:女性，1:男性			  // sex
+	"birthday":0,//1900-04-23 格式是这样的                  // b_year  b_month  b_day
+  	"avatar":"http://xxx.com/test.png", 格式是png的, -- 头像网址全路径 320x320,如果这个值是null我们就使用默认的男女图片  //avatar
+	"level":10,//默认是10                                  //member_lv_id
+    }, 
+    "res": "succ"
+}
+
+//失败信息
+{
+  "data" : {
+    "message" : "账号或密码错误",
+    "status" : "false"
+  },
+  "rep" : "fail",
+  "res" : "1A1C500B84447A826E288A84578BE10E"
+}

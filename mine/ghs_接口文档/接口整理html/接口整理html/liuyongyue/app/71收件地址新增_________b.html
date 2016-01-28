@@ -1,0 +1,96 @@
+</html>
+<head>
+<meta http-equiv="content-type"content="text/html;charset=utf-8">
+</head>
+<pre>
+接口名称：增加收件地址
+接口地址：<a href="http://ectest.huanqiugo.com/member-app_addressAdd.html?real_name=马江林">http://ectest.huanqiugo.com/member-app_addressAdd.html?real_name=马江林</a>
+<a href="./test_post.html">测试页面./test_post.htm</a>
+
+问题：
+******地址库有问题 ，地址ID 新老匹配不对
+
+
+
+请求参数：
+"real_name":"马江林"
+"province":"北京的id",
+"city":"北京的id",
+"district":"海淀的id",
+"address":"详细地址"
+"telephone":"13811522352"
+
+返回结果：
+{
+  "code":1,
+  "message":"成功"
+  "data":
+   {
+       "id":12,
+       "real_name":"马江林"
+       "province":"北京",
+       "city":"北京",
+       "district":"海淀区",
+       "address":"详细地址"
+       "telephone":"13811522352"
+   }
+}
+
+{
+  "code":0,
+  "message":"错误"
+}
+
+ghs:
+接口地址 http://122.11.49.7:8000/appHome/addressAdd
+测试文件：addaddress.html
+
+{
+  "code":1100,
+  "message":"没有接收到用户id"
+}
+
+{
+  "code":1101,
+  "message":"用户id不存在"
+}
+
+{
+  "code":1103,
+  "message":"收货人姓名不能为空"
+}
+
+{
+  "code":1104,
+  "message":"请检查收货人姓名"
+}f
+
+{
+  "code":1105,
+  "message":"没有接收到region_id"
+}
+
+{
+  "code":1106,
+  "message":"配送地区不能为空"
+}
+{
+  "code":1107,
+  "message":"详细地址不能为空"
+}
+
+{
+  "code":1108,
+  "message":"手机号码不能为空"
+}
+
+{
+  "code":1109,
+  "message":"手机号码填写有误"(长度)
+}
+
+{
+  "code":1110,
+  "message":"手机号码填写有误"（格式）
+}
+</html>

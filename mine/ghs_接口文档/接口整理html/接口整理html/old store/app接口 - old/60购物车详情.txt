@@ -1,0 +1,38 @@
+接口名称：购物车详情
+接口地址：http://122.11.49.7:8000/app2/cart
+测试接口：cart.html
+请求参数：user_id
+
+
+返回结果：
+{
+  "code":1,
+  "message":"成功",
+  "data":
+  {
+      "total_price":299.00
+      "total_count":3    商品总数量
+      "shipping_fee" : 0 //目前为0
+      "items"
+     [
+        {
+           "cart_id":444, 购物车id
+           "sku":"9101166",商品编号
+           "name":"万能清洁水枪1套",
+           "image":"http://test.com/商品缩略图.png",     200x200
+           "marked_price":123.78,   参考价，如果为0，取price*1.2
+           "price":98,     环球价
+           "spe_id"1
+           "spe_name":"绿色XL"
+           "count":2  数量2件
+           "subtotal_price": 单项总价
+           
+        }
+     ]
+   }
+}
+
+{
+  "code":0,
+  "message":"错误"
+}

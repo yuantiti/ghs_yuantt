@@ -1,0 +1,48 @@
+</html>
+<head>
+<meta http-equiv="content-type"content="text/html;charset=utf-8">
+</head>
+<pre>
+接口名称：关注的商品列表
+<a href="http://ectest.huanqiugo.com/product-app_favorite_list.html?user_id=42201">http://ectest.huanqiugo.com/product-app_favorite_list.html?user_id=42201</a>
+<a href="./test_post.html">测试页面./test_post.htm</a>
+接口地址：http://122.11.49.7:8000/App2/favorite
+
+
+请求参数：
+#######################
+增加
+user_id = 42201
+
+#######################
+
+
+
+返回结果：
+{
+    "code": 1,
+    "message":"成功",
+    "data":
+[
+    {
+       "id":444, 商品id
+       "page_id":10,商品列表页码
+       "sku":"9101166",商品编号1
+       "name":"万能清洁水枪1套",
+       "image":"http://test.com/商品缩略图.png",     200x200
+       "marked_price":123.78,   参考价，如果为0，取price*1.2
+       "price":98,     环球价
+    }
+]
+}
+
+{
+  "code":1100,
+  "message":"没有接收到用户id"
+}
+
+{
+  "code":1101,
+  "message":"用户id不存在"
+}
+</html>

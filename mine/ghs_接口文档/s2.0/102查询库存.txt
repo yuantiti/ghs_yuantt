@@ -1,0 +1,41 @@
+【说明】
+
+【接口名称】查询库存接口
+
+【接口地址】
+
+【请求参数】
+ province_code＝100223//省份编码，内蒙古的话就取到二级编码
+ product_info＝{
+  "product" : [
+    {
+      "count" : 4,
+      "product_id" : 4334//货品id
+    },
+    {
+      "count" : 4,
+      "product_id" : 4334
+    },
+    {
+      "count" : 4,
+      "product_id" : 4334
+    }
+  ]
+}
+ 
+【返回数据】
+//成功
+{
+	"data":"",
+	"rsp":"succ",
+	"res":""
+}
+//失败
+{
+	"data":{
+  		"message":"4334,32234,5445",//这些商品库存不足
+             	"status":false
+		},
+	"rsp":"fail",
+	"res":"E0D99131B6ACB984B168DDBE94D980AA"
+}

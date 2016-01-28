@@ -1,0 +1,37 @@
+接口名称：购物车商品加入
+接口地址：http://122.11.49.7:8000/app2/cartAdd
+请求参数：
+sku=123,
+spec_id=124（规格id）,count=1(商品数量)
+
+返回结果：
+{
+  "code":1,
+  "message":"成功",  
+  "data":
+   {  
+       "total_price":299.00
+       "total_count":3    商品总数量
+   }
+}
+
+{
+  "code":0,
+  "message":"错误"
+}
+
+
+{
+  "code":1100,
+  "message":"没有接收到用户id"
+}
+
+{
+  "code":1101,
+  "message":"用户id不存在"
+}
+
+{
+  "code":1117,
+  "message":"购物车中已存在该商品"
+}

@@ -1,0 +1,59 @@
+接口名称：收件地址列表，不翻页
+接口地址： http://122.11.49.7:8000/appHome/Address
+请求参数：
+user_id  当前用户的ID
+
+返回结果：
+{
+  "code":1,
+  "message":"成功"
+  "data":
+[
+   {
+       "id":12,
+       "real_name":"马江林"
+       "province":"北京",
+       "city":"北京",
+       "district":"海淀区",
+       "address":"详细地址"
+       "telephone":"13811522352"
+   },
+   {
+       "id":13,
+       "real_name":"马江林"
+       "province":"北京",
+       "city":"北京",
+       "district":"海淀区",
+       "address":"详细地址"
+       "telephone":"13811522352"
+   },
+   {
+       "id":14,
+       "real_name":"马江林"
+       "province":"北京",
+       "city":"北京",
+       "district":"海淀区",
+       "address":"详细地址"
+       "telephone":"13811522352"
+   }
+]
+
+{
+  "code":0,
+  "message":"错误"
+}
+
+
+ghs:
+接口地址 http://122.11.49.7:8000/appHome/Address
+测试文件：address.html
+
+{
+  "code":1100,
+  "message":"没有接收到用户id"
+}
+
+{
+  "code":1101,
+  "message":"用户id不存在"
+}f

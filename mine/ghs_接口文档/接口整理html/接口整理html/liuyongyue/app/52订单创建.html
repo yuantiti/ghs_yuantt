@@ -1,0 +1,65 @@
+</html>
+<head>
+<meta http-equiv="content-type"content="text/html;charset=utf-8">
+</head>
+<pre>
+接口名称：订单创建
+接口地址：<!-- <a href="http://ectest.huanqiugo.com/ordercreate?user_id=12312">http://ectest.huanqiugo.com/ordercreate?user_id=12312</a> -->
+<a href="http://122.11.49.7:8000/app2/ordercreate.html?device_type&user_id=12312">http://122.11.49.7:8000/app2/ordercreate.html?device_type&user_id=12312</a>
+
+请求参数：
+device_type 设备类型 每个接口都传
+user_id=12312,
+
+lijin_id=1743,  //礼金券id
+chuzhijin=50,
+zancunkuan=100,
+lijinquan_sn=20150230,//礼金券编号
+lijinquan=30,//通过激活礼金券获取到礼券金额
+
+"pay_type":1,               支付方式
+"address_id"=123          收货地址ID
+merchant_list=[{"cart_id":123, "sku":9100198,"count":2,"spe":91}, {"cart_id":123, "sku":9101482,"count":1,"spe":64}]  商品清单，JSON格式
+
+
+
+返回结果：
+{
+  "code":1,
+  "message":"成功"
+  "data":
+    {
+       "id":444, 订单ID
+       "order_no":"12312" 
+       "time":"2014-08-17 22:23",
+       "status":1,               订单状态
+       "pay_type":1,               支付方式
+       "merchant_list":
+       [
+          {
+              "id":"清洁水枪1套",
+              "name":"清洁水枪1套",
+              "count":2,
+              "image":"http://test.com/缩略图.png", 200x200
+              "price":299,
+          },
+          {
+              "id":"清洁水枪1套",
+              "name":"清洁水枪1套",
+              "count":2,
+              "image":"http://test.com/缩略图.png", 200x200
+              "price":299,
+          }
+       ]
+       "total_price":598,
+       "real_name":"马江林",
+       "address":"详细地址"
+       "telephone":"13811522352"
+    }
+}
+
+{
+  "code":0,
+  "message":"错误"
+}
+</html>

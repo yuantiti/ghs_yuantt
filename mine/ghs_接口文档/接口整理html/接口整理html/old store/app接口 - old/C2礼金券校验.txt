@@ -1,0 +1,32 @@
+﻿接口名称：礼金券使用，先验证输入的代码是否正确   
+接口地址：/app2/lijinquan
+
+请求参数：  方式post
+user_id=12312  //每个接口必传参数
+device_type=iPhone //每个接口必传参数
+coupos_no=78909876 //礼金券id
+order_amount=500  //订单的金额
+
+返回结果：
+
+{
+    "code": 1,
+    "message": "成功"
+	"data": 
+        {
+            "account": "30.00",
+            "description": "礼金券",
+            "type": 3
+        },
+}
+
+
+{
+  "code":1029,
+  "message":"礼金券编码有误"
+}
+
+{
+  "code":1030,
+  "message":"礼金券编不全"
+}

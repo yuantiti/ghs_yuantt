@@ -1,0 +1,81 @@
+【说明】
+参见b2c.order.get_wap_order_detail 订单详情接口
+//需要加强,用户在一个订单中有多个商品的情况
+
+【接口名称】订单详情接口
+
+【接口地址】
+
+【请求参数】
+member_id	int	Y	会员id
+accesstoken	string	Y	会员登录返回的 accesstoken
+order_id	string	Y	订单号
+
+【返回数据】
+{
+  "data" : {
+    "consignee" : {
+      "addr" : "上海市徐汇区桂林路396号2号楼5F",
+      "area" : "上海上海市徐汇区",
+      "email" : "null",
+      "mobile" : "13918765456",
+      "name" : "王语嫣",
+      "r_time" : "任意时间,任意时间段",
+      "telephone" : "null",
+      "zip" : "2300233"
+    },
+    "createtime" : "1427367107",
+    "goodsinfo" : {
+      "goods" : [
+        "550" : {
+          "discount_price" : "0.000",
+          "gift" : "null",
+          "goods_id" : "98",
+          "goods_name" : "AAA",
+          "item_type" : "product",
+          "price" : "50.000",
+          "product_id" : "550",
+          "promotion" : "null",
+          "quantity" : "1",
+          "score" : "45",
+          "spec_info" : "null",
+          "totle_price" : "50"
+        }
+      ]
+    },
+    "member_id" : "10",
+    "orderStatus" : "活动订单",
+    "order_id" : "150326185167921",
+    "payStatus" : "未支付",
+    "payed" : "0.000",
+    "payinfo" : {
+      "payid" : "deposit",
+      "payname" : "预存款"
+    },
+    "shipStatus" : "未发货",
+    "shipping" : {
+      "cost_shipping" : "10.000",
+      "is_protect" : "false",
+      "shipping_name" : "快递"
+    },
+    "taxinfo" : {
+      "tax_content" : "null",
+      "tax_title" : "null",
+      "tax_type" : "不需发票"
+    },
+    "total" : {
+      "consumeScore" : "0.000",
+      "cost_freight" : "10.000",
+      "cost_item" : "50.000",
+      "cost_payment" : "0.000",
+      "cost_protect" : "0.000",
+      "cost_tax" : "0.000",
+      "discountPrice" : "0.000",
+      "totalGainScore" : "45.000",
+      "total_amount" : "60.000"
+    },
+    "total_amount" : "60.000"
+  },
+  "res" : "87d2e90c99a9b902b226bae91c8a693e",
+  "rsp" : "succ"
+}

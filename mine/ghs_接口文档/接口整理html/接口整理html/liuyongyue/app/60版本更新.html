@@ -1,0 +1,11 @@
+</html>
+<head>
+<meta http-equiv="content-type"content="text/html;charset=utf-8">
+</head>
+<pre>
+接口名称：版本更新
+接口地址：<a href="http://122.11.49.7:8000/app/version?device_type=iPhone">http://122.11.49.7:8000/app/version?device_type=iPhone</a>请求参数：device_type=iPhone   或者Androidversion=1.2.0   App当前版本返回结果：{  "code":1,  "message":"成功"  "data":{    "version”:1.1.0,	返回最新版本，版本号    "summary":"1. 修改了Bug \n 2. 提高了性能  就是版本摘要"，    "force_update":1    是否强制更新 1:强制更新 0:不强制更新    "download_url":"http://xxxx.com/xxx.apk"  }}{
+  "code":0,
+  "message":"系统错误"
+}
+字段说明:download_url: 是要跳转到的下载地址，iOS一般跳转到AppStoreforce_update：是否强制更新，如果是强制更新，提示的时候就不出现 “忽略此版本”“下次再说”这2个选择。</html>

@@ -1,0 +1,40 @@
+接口地址：http://122.11.49.7:8000/app2/advertising
+请求参数：seat=apphot（TOP热销） 默认
+apptv（TV直播）
+appcuxiao(促销)
+appmiaosha(秒杀)
+apphwgou（海外购）
+appnew（上新）
+appbangdan(榜单)			
+appjianshi(荐食记)
+appyueshi(阅视)
+
+返回结果：
+{
+  "code":1,
+  "message":"成功"
+  "data":
+  [
+     {        
+        "title":"广告标题",   
+		"link":"广告指向",//（商品编号/原生专题id/wap专题链接）
+        "type":1,           //指向类型  1. 商品   2.app专题  3 wap专题   
+		"images":http://www.ghs.net/ss.jpg , //广告图片
+		"time":2  //剩余时间
+     },
+	 {        
+        "title":"广告标题",   
+		"link":"广告指向",//（商品编号/原生专题id/wap专题链接）
+        "type":1,           //指向类型  1. 商品   2.app专题  3 wap专题   
+		"images":http://www.ghs.net/ss.jpg , //广告图片
+		"time":2  //剩余时间
+     },
+	{        
+        "title":"广告标题",   
+		"link":"广告指向",//（商品编号/原生专题id/wap专题链接）
+        "type":1,           //指向类型  1. 商品   2.app专题  3 wap专题   
+		"images":http://www.ghs.net/ss.jpg , //广告图片
+		"time":2  //剩余时间
+     }
+  ]
+}

@@ -1,0 +1,32 @@
+</html>
+<head>
+<meta http-equiv="content-type"content="text/html;charset=utf-8">
+</head>
+<pre>
+接口名称：用户设备登记
+接口地址：<a href="http://122.11.49.7:8000/app2/register_device?device_id=ASADFSFSDFSDF&device_token=SDSDFSDFSFSFSFSF">http://122.11.49.7:800/app2/register_device?device_id=ASADFSFSDFSDF&device_token=SDSDFSDFSFSFSFSF</a>
+
+业务逻辑：
+  1.	登记和更新设备 register_device
+	请求参数: 同数据库表device_id, device_type, device_token, preferences……
+	返回结果: 成功或失败标识
+	业务逻辑: 
+a.	以device_id为条件，没有纪录则新增，有纪录则更新
+b.	user_id刚开始为空，用户登录后加入，用户登出后清空
+c.	客户端在App每次启动时和用户登录时调用此接口，服务器此时将badge_number清0，即认为客户端已经打开后已经读过所有新消息了
+d.	用户修改了推送设置，调用此接口
+
+请求参数：
+user_id 选填
+device_id=ASADFSFSDFSDF   必填
+device_token=SDSDFSDFSFSFSFSF   必填
+device_type=iOS 设备类型：iOS  或者 Android  选填
+notification=1    信息推送的开关  1开  0关  （默认1 ）
+
+
+返回结果：
+{
+  "code":1,
+  "message":"成功"
+}
+</html>

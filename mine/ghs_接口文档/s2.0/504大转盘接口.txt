@@ -1,0 +1,42 @@
+【说明】
+
+
+【接口名称】
+
+【接口地址】
+
+【请求参数】
+
+
+【返回数据】
+
+result ：  		为0-7 之间的随机数
+remain_coin ：	应为在服务器中计算之后剩下的金币数
+free_time ：	免费抽奖次数（每天都有一次免费的抽奖机会）
+coin_count ：	每次抽奖耗费的金币数
+
+{
+	
+	"data":{
+		"free_time":0,
+		"coin_count":20,
+		"remain_coin":195
+		},
+	"rsp":"succ",   //标记请求成功
+
+	"res":""   ,   //服务端返回的消息
+}
+
+请求入口："roulette/draw_result"//抽奖结果
+
+返回数据：
+{
+	
+	"data":{
+		"result":3,
+		"remain_coin":195
+		},
+	"rsp":"succ",   //标记请求成功
+
+	"res":""   ,   //服务端返回的消息
+}

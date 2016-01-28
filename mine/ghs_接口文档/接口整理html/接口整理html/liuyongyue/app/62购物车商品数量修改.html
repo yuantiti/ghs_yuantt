@@ -1,0 +1,58 @@
+</html>
+<head>
+<meta http-equiv="content-type"content="text/html;charset=utf-8">
+</head>
+<pre>
+接口名称：购物车修改商品数量
+接口地址：<a href="http://ectest.huanqiugo.com/cart-app_cartChange.html?cart_id=123&count=2">http://ectest.huanqiugo.com/cart-app_cartChange.html?cart_id=123</a>
+<a href="./test_post.html">测试页面./test_post.htm</a>
+请求参数：
+cart_id=123
+count=2  该商品的购买数量
+
+返回结果：
+{
+  "code":1,
+  "message":"成功",  
+  "data":
+   {  
+       "total_price":299.00
+       "total_count":3    商品总数量
+   }
+}
+
+{
+  "code":0,
+  "message":"错误"
+}
+
+{
+  "code":1100,
+  "message":"没有接收到用户id"
+}
+
+{
+  "code":1101,
+  "message":"用户id不存在"
+}
+
+{
+  "code":1118,
+  "message":"没有接收到cart_id"
+}
+
+{
+  "code":1119,
+  "message":"没有接收到参数：数量"
+}
+
+{
+  "code":1120,
+  "message":"购物车中无商品"
+}
+
+{
+  "code":1121,
+  "message":"用户不匹配"
+}
+</html>

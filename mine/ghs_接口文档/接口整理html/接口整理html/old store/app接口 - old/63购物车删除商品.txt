@@ -1,0 +1,60 @@
+接口名称：购物车删除商品
+接口地址：http://122.11.49.7:8000/app2/cartDelete
+
+请求参数：
+cart_id=123,456,789  逗号分割数组
+clear=0   是否清空购物车，1清空，0不清空，如果要清空购物车，sku参数是什么可以忽略
+
+返回结果：
+{
+  "code":1,
+  "message":"成功",
+  "data":
+   {  
+       "total_price":299.00
+       "total_count":3    商品总数量
+   }
+}
+
+{
+  "code":0,
+  "message":"错误"
+}
+
+{
+  "code":1100,
+  "message":"没有接收到用户id"
+}
+
+{
+  "code":1101,
+  "message":"用户id不存在"
+}
+
+{
+  "code":1119,
+  "message":"没有接收到参数"
+}
+
+{
+  "code":1120,
+  "message":"购物车中无商品"
+}
+
+{
+  "code":1121,
+  "message":"用户不匹配"
+}
+
+
+
+
+
+data:[]
+
+data:{}
+data:null
+
+string:null
+string:""
+

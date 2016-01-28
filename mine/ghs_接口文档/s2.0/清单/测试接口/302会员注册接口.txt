@@ -1,0 +1,31 @@
+【说明】
+参见 b2c.member.signup
+
+【接口名称】会员注册接口
+
+【接口地址】
+
+【请求参数】
+参数	类型	是否必须	说明
+uname	string	Y	手机号
+password	string	Y	加密过后的密码
+createtime	string	Y	创建时间(时间戳)
+vcode	string	N	验证码(有效时间:30分钟)
+
+【返回数据】
+
+{
+    "data": "",
+    "res": "014D44E20B6CFD7E0BA4C6AEEAF11F13", 
+    "rep": "succ"
+}
+
+//注册失败
+{
+  "data" : {
+    "message":"该账号已经注册过了",
+    "status" : "false"
+  },
+  "rep" : "fail",
+  "res" : "1A1C500B84447A826E288A84578BE10E"
+}

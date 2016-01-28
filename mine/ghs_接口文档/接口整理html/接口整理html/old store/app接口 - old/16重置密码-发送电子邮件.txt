@@ -1,0 +1,34 @@
+接口名称：重置密码，通过发送电子邮件的方式
+接口地址：http://122.11.49.7:8000/app2/user_find_pw
+测试地址：user_find_pw.html
+
+请求参数：
+email=majianglin@163.com
+
+
+返回结果：
+{
+  "code":1,
+  "message":"成功"
+}
+
+{
+  "code":0,
+  "message":"错误"
+}
+
+{
+  "code":1100,
+  "message":"没有接收到用户id"
+}
+
+{
+  "code":1101,
+  "message":"用户id不存在"
+}
+
+{
+  "code":1128,
+  "message":"电子邮箱不存在或该邮箱与账号不匹配"
+}
+

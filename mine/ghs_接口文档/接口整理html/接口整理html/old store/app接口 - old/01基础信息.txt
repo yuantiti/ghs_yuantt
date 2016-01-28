@@ -1,0 +1,16 @@
+接口名称：App基本信息
+接口地址：http://122.11.49.7:8000/app2/baseInfo
+
+请求参数：无
+
+返回结果：
+{
+  "code":1,
+  "message":"成功"
+  "data"
+  {
+    "live_china":"http://www/aaa.m3u8",
+    "live_beijing":"http://www/aaa.m3u8",
+    "tv_area":"1",  服务器根据用户IP地址定位用户在哪个广电区域，以下待定，1北京，0其他
+  }
+}

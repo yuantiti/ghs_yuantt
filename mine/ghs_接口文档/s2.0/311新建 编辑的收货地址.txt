@@ -1,0 +1,32 @@
+【说明】
+参见 b2c.member.save_address 
+http://testec.ghs.net/index.php/api?0=b2c.member.save_address&member_id=&sign=22B001E0604C555A26076B6DB0658486
+【接口名称】新建编辑收货地址接口
+
+【接口地址】
+
+【请求参数】
+参数	类型	是否必须	说明
+member_id	int	Y	会员ID
+accesstoken	string	Y	会员登录返回的 accesstoken//这个APP是不用传的
+ship_id	string	N	保存编辑收货地址ID （新建不需要填写，编辑必填）
+ship_name	string	Y	收货人姓名
+ship_area	string	Y	收货人地区 （ mainland:甘肃省/张掖市/甘州区:620702 保存地区如果不是和web中地区结构一直则会在web站点中错误）,
+ship_addr	string	Y	收货人地址
+ship_zip	string	Y	收货人邮编 //接口要该一下,这个不是必传参数
+ship_mobile	string	Y/N	收货人手机号码
+is_default	string	Y	是否设置为默认收货地址true默认地址 , false 不是默认地址,前台需要用户确认是否添加为默认地址
+
+【返回数据】
+{
+    "rsp": "succ", 
+    "data": {	
+	//新增
+       "ship_id":12,
+       "ship_name":"马江林",
+       "ship_area":"甘肃省/张掖市/甘州区:620702",
+       "ship_addr":"详细地址",
+       "ship_mobile":"13811522352"
+    }, 
+    "res": "1557E4D86B2E6681F4EF37383DE15E4E"
+}

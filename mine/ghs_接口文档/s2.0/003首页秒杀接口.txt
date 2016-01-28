@@ -1,0 +1,40 @@
+【说明】
+这个接口由于有一个倒计时,并且时间到了后就要去服务器拿数据,所以把接口独立出来
+
+【接口名称】首页秒杀接口
+
+【接口地址】/app/homeSecKill
+
+【请求参数】无
+
+【返回数据】
+{
+  "data" : {
+    "end_time" : "2015-08-21 15:30:00",//秒杀的时间戳
+    "goods_list" : [//这个最多显示3个,建议固定为3个,不要变
+      {
+        "image" : "http://m.ghs.net/_assets/Www/lunbo/roban_lunbo_new.jpg",
+        "model" : 6,//默认是跳转到秒杀列表的,如果要跳转到商品详情或者其他页面,请自行修改这个值,如果要跳转到web页面请同时维护url这个值
+        "title" : "限时秒杀",
+        "type_id" : "654332",
+        "url" : ""
+      },
+      {
+        "image" : "http://m.ghs.net/_assets/Www/lunbo/roban_lunbo_new.jpg",
+        "model" : 6,
+        "title" : "限时秒杀",
+        "type_id" : "654332",
+        "url" : ""
+      },
+      {
+        "image" : "http://m.ghs.net/_assets/Www/lunbo/roban_lunbo_new.jpg",
+        "model" : 6,
+        "title" : "限时秒杀",
+        "type_id" : "654332",
+        "url" : ""
+      }
+    ]
+  },
+  "res" : "",
+  "rsp" : "succ"
+}

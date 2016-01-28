@@ -1,0 +1,27 @@
+</html>
+<head>
+<meta http-equiv="content-type"content="text/html;charset=utf-8">
+</head>
+<pre>
+接口名称：支付接口
+接口地址：<a href="http://122.11.49.7:8000/app2/payInfo?order_id=123&order_no=123123&pay_type=7">http://122.11.49.7:8000/app2/payInfo?order_id=123&order_no=123123&pay_type=7</a>
+
+请求参数：
+
+order_id=123
+order_no＝"123123"
+pay_type=7   //支付宝7  微信132
+
+
+返回结果：
+{
+  "code":1,
+  "message":"成功",
+  "data":"partner="2088101568358171"&seller_id="alipay-test09@alipay.com"&out_trade _no="0819145412-6177"&subject="《暗黑破坏神 3:凯恩之书》"&body="暴雪唯一官方授权 中文版!玩家必藏!附赠暗黑精致手绘地图!绝不仅仅是一本暗黑的故事或画册,而是一个栩栩如生的 游戏再现。是游戏玩家珍藏的首选。 "&total_fee="0.01"&notify_url="http%3A%2F%2Fnotify.msp.hk%2Fnotify.htm"&s ervice="mobile.securitypay.pay"&payment_type="1"&_input_charset="utf-8"&i t_b_pay="30m"&show_url="m.alipay.com"&sign="lBBK%2F0w5LOajrMrji7DUgEqNjIh QbidR13GovA5r3TgIbNqv231yC1NksLdw%2Ba3JnfHXoXuet6XNNHtn7VE%2BeCoRO1O%2BR1 KugLrQEZMtG5jmJIe2pbjm%2F3kb%2FuGkpG%2BwYQYI51%2BhA3YBbvZHVQBYveBqK%2Bh8m Uyb7GM1HxWs9k4%3D"&sign_type="RSA""    //主要包含商户的订单信息,key="value"形式,以&连接。
+}
+
+{
+  "code":0,
+  "message":"错误"
+}
+</html>

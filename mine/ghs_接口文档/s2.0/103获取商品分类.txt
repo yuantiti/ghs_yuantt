@@ -1,0 +1,80 @@
+【说明】
+ 参见b2c.goods.get_cat_list 根据商品分类ID获取下级分类列表
+
+【接口名称】获取商品分类列表接口
+
+【接口地址】
+
+【请求参数】
+参数	类型	是否必须	说明
+cat_id	int	N	分类ID （如果不填默认为0，返回顶级分类列表）
+ 
+【返回数据】
+
+children,以及里面的是新加字段
+mode 和url是控制跳转的，使用详情请参照001首页主接口，不传的话就默认跳转到最后的分类等级
+
+{
+  "data" : [
+    {
+      "cat_id" : "2",
+      "cat_name" : "家居用品",
+      "is_leaf" : "false",
+      "last_modify" : "1418119689",
+      "parent_id" : "1",
+      "type_id" : "5",
+      "desc":"null",
+      "image" :"null",
+      "children" : [
+        {
+          "desc" : "床品,凉席,枕头,被子,椅垫抱枕,地毯,窗帘",
+          "cat_id" : 3,
+          "type_id" : "5",
+          "image" : {
+                "image_id": "0f3f928f5efc8be86a1c50f1b5f2cb8e",
+                "s_url":"http://pic.shopex.cn/pictures/eimages/c1e730d4667b4f5f4be210c07e928032a3a1b857a8.png",
+                "m_url":"http://pic.shopex.cn/pictures/eimages/5dd2b6e1471a71351b6aaeb09949c17f9e9a6dfbc8.png",
+                "l_url":"http://pic.shopex.cn/pictures/eimages/f2ba403839c3b3e6c03f8c89f52af291aaced41be0.png"
+		},          "cat_name" : "家纺",
+	  "is_leaf" : "false",
+          "last_modify" : "1418119689",
+          "parent_id" : "1"
+        },
+        {
+          "desc" : "床品,凉席,枕头,被子,椅垫抱枕,地毯,窗帘",
+          "cat_id" : 3,
+          "type_id" : "5",
+          "image" : {
+                "image_id": "0f3f928f5efc8be86a1c50f1b5f2cb8e",
+                "s_url":"http://pic.shopex.cn/pictures/eimages/c1e730d4667b4f5f4be210c07e928032a3a1b857a8.png",
+                "m_url":"http://pic.shopex.cn/pictures/eimages/5dd2b6e1471a71351b6aaeb09949c17f9e9a6dfbc8.png",
+                "l_url":"http://pic.shopex.cn/pictures/eimages/f2ba403839c3b3e6c03f8c89f52af291aaced41be0.png"
+		},
+          "cat_name" : "家纺",
+	  "is_leaf" : "false",
+          "last_modify" : "1418119689",
+          "parent_id" : "1"
+        },
+        {
+         "desc" : "床品,凉席,枕头,被子,椅垫抱枕,地毯,窗帘",
+          "cat_id" : 3,
+          "type_id" : "5",
+          "image" : {
+                "image_id": "0f3f928f5efc8be86a1c50f1b5f2cb8e",
+                "s_url":"http://pic.shopex.cn/pictures/eimages/c1e730d4667b4f5f4be210c07e928032a3a1b857a8.png",
+                "m_url":"http://pic.shopex.cn/pictures/eimages/5dd2b6e1471a71351b6aaeb09949c17f9e9a6dfbc8.png",
+                "l_url":"http://pic.shopex.cn/pictures/eimages/f2ba403839c3b3e6c03f8c89f52af291aaced41be0.png"
+		},
+          "cat_name" : "家纺",
+	  "is_leaf" : "false",
+          "last_modify" : "1418119689",
+          "parent_id" : "1"
+        }
+      ]
+    }
+  ]
+ ],
+  "res" : "6291A03BFC9D5E9299D342D39A610CD7",
+  "rsp" : "succ"
+}
+

@@ -1,0 +1,26 @@
+【说明】
+
+
+【接口名称】删除购物车商品接口
+
+【接口地址】http://ectest.huanqiugo.com/cart-app_cartDelete.html?cart_id=123
+
+【请求参数】
+cart_id=123,456,789//英文的逗号分隔
+
+【返回数据】
+{
+	"data":"",//返回的数据都在这里处理
+	"rsp":"succ",//标记请求成功
+	"res":"E0D99131B6ACB984B168DDBE94D980AA"
+}
+
+//失败
+{
+	"data":{
+  		"message":"",
+             	"status":false
+		},
+	"rsp":"fail",
+	"res":"E0D99131B6ACB984B168DDBE94D980AA"
+}

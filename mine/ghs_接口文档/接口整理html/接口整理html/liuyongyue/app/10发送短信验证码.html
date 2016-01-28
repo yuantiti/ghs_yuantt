@@ -1,0 +1,67 @@
+<html>
+<head>
+	<meta content="text/html" charset="utf-8"/>
+</head>
+<pre>
+接口名称：发送短信验证码
+接口地址：<a href="http://ectest.huanqiugo.com/passport-app_send_vcode_sms.html?mobile=15024908243&action=1 ">http://ectest.huanqiugo.com/passport-app_send_vcode_sms.html?mobile=13811522352&action=1 </a>
+<a href="./test_post.html">测试页面./test_post.htm</a>
+提交方式 post
+示例：122.11.49.7:8000/app2/sendCode
+测试接口:user_find_code.html
+
+请求参数：
+mobile=13811522352    手机号
+action=1         1注册，2重置密码
+
+返回结果：
+{
+  "code":1,
+  "message":"成功"
+}
+
+错误码由服务器决定，只要不是0的错误码，客户端会直接提示给用户
+
+
+{
+  "code":1000,
+  "message":"手机号码不能空"
+}
+
+{
+  "code":1001,
+  "message":"手机号码填写有误"
+}
+
+{
+  "code":1002,
+  "message":"该手机已被注册"
+}
+
+{
+  "code":1003,
+  "message":"两次发送间隔不能少于120s,请稍候再试"
+}
+
+{
+  "code":1004,
+  "message":"网络延时，请重新获取校验码"
+}
+
+action=2 提示添加
+{
+  "code":1100,
+  "message":"没有接收到用户id"
+}
+
+{
+  "code":1101,
+  "message":"用户id不存在"
+}
+
+{
+  "code":1126,
+  "message":"手机号码不存在，请核实"
+}
+</pre>
+</html>

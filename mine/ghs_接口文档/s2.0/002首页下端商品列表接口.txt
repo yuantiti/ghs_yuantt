@@ -1,0 +1,159 @@
+【说明】
+这个是复用以前的首页列表接口，建议先看首页主接口的说明后再看这个接口
+type_id的使用说明请参照首页主接口
+model如果不传我们就默认跳转到商品详情页面,如果需要跳转到web页面请增加一个url字段，客户端是支持的
+end_time，是以天为单位
+
+【接口名称】首页下端商品列表接口
+
+【接口地址】/app/homeGoodsList
+
+【请求参数】无
+
+【返回数据】
+{
+  "rep" : "succ",
+  "data" : [
+    {
+      "image" : "http://m.ghs.net/_assets/app/huijingpin9106947.jpg",
+      "type_id" : "9106947",
+      "end_time" : "24",
+      "title" : "LISCA",
+      "model" : 5,
+    },
+    {
+      "image" : "http://m.ghs.net/_assets/Www/JP9106804.jpg",
+      "type_id" : "9106804",
+      "end_time" : "10",
+      "title" : "瑞士无线电钻",
+      "model" : 5,
+    },
+    {
+      "image" : "http://m.ghs.net/_assets/app/HUIjingpin1072155.jpg",
+      "type_id" : "9107215",
+      "end_time" : "10",
+      "title" : "外交官",
+      "model" : 5,
+    },
+    {
+      "image" : "http://m.ghs.net/_assets/app/huijingpin9105425.jpg",
+      "type_id" : "9105425",
+      "end_time" : "05",
+      "title" : "名匠",
+      "model" : 5,
+    },
+    {
+      "image" : "http://m.ghs.net/_assets/app/9106949apphuijingpin.jpg",
+      "type_id" : "9106949",
+      "end_time" : "31",
+      "title" : "酵素",
+      "model" : 5,
+    },
+    {
+      "image" : "http://m.ghs.net/_assets/Www/9104966.jpg",
+      "type_id" : "9104966",
+      "end_time" : "03",
+      "title" : "美之扣",
+      "model" : 5,
+    },
+    {
+      "image" : "http://m.ghs.net/_assets/app/9106708.jpg",
+      "type_id" : "9106708",
+      "end_time" : "19",
+      "title" : "蔻缇淡斑无瑕雪白霜套组",
+      "model" : 5,
+    },
+    {
+      "image" : "http://m.ghs.net/_assets/Www/HJP91045950.jpg",
+      "type_id" : "9104595",
+      "end_time" : "18",
+      "title" : "镀膜",
+      "model" : 5,
+    },
+    {
+      "image" : "http://m.ghs.net/_assets/Www/9106306.jpg",
+      "type_id" : "9106306",
+      "end_time" : "28",
+      "title" : "老工匠",
+      "model" : 5,
+    },
+    {
+      "image" : "http://m.ghs.net/_assets/app/hjp105898.jpg",
+      "type_id" : "9105898",
+      "end_time" : "10",
+      "title" : "宝家洁自动拧水魔术平板拖套组",
+      "model" : 5,
+    },
+    {
+      "image" : "http://m.ghs.net/_assets/Www/HJP_9105886.jpg",
+      "type_id" : "9105886",
+      "end_time" : "03",
+      "title" : "赛普瑞斯双面煎不粘锅具套组",
+      "model" : 5,
+    },
+    {
+      "image" : "http://m.ghs.net/_assets/app/HJP_0013.jpg",
+      "type_id" : "9105411",
+      "end_time" : "01",
+      "title" : "东菱新一代全智能面包机",
+      "model" : 5,
+    },
+    {
+      "image" : "http://m.ghs.net/_assets/Www/9106705.jpg",
+      "type_id" : "9106705",
+      "end_time" : "02",
+      "title" : "奥克斯破壁料理机",
+      "model" : 5,
+    },
+    {
+      "image" : "http://m.ghs.net/_assets/app/HJP9106016.jpg",
+      "type_id" : "9106016",
+      "end_time" : "15",
+      "title" : "零重力休闲躺椅",
+      "model" : 5,
+    },
+    {
+      "image" : "http://m.ghs.net/_assets/Www/9106322.jpg",
+      "type_id" : "9106322",
+      "end_time" : "06",
+      "title" : "美眠宝可移动休闲折叠床套组",
+      "model" : 5,
+    },
+    {
+      "image" : "http://m.ghs.net/_assets/app/9106036.jpg",
+      "type_id" : "9106036",
+      "end_time" : "29",
+      "title" : "海斯曼懒人健康平板运动机",
+      "model" : 5,
+    },
+    {
+      "image" : "http://m.ghs.net/_assets/Www/HJP9106715.jpg",
+      "type_id" : "9106715",
+      "end_time" : "17",
+      "title" : "惠人",
+      "model" : 5,
+    },
+    {
+      "image" : "http://m.ghs.net/_assets/app/huijingpinjia3.jpg",
+      "type_id" : "9105512",
+      "end_time" : "17",
+      "title" : "Healthmic热能光波炉",
+      "model" : 5,
+    },
+    {
+      "image" : "http://m.ghs.net/_assets/app/HJP_0016.jpg",
+      "type_id" : "9104690",
+      "end_time" : "28",
+      "title" : "家宝破壁养生一体机",
+      "model" : 5,
+    },
+    {
+      "image" : "http://m.ghs.net/_assets/app/HJP_0001.jpg",
+      "type_id" : "9106443",
+      "end_time" : "23",
+      "title" : "炊大皇贵族品质钻石锅4+5套组",
+      "model" : 5,
+    }
+  ],
+  "res" : ""
+}

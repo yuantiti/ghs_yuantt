@@ -1,0 +1,92 @@
+</html>
+<head>
+<meta http-equiv="content-type"content="text/html;charset=utf-8">
+</head>
+<pre>
+广告接口
+参数：top（导航广告）/hot（top热销广告）
+导航广告返回：
+	广告名称
+	广告指向（商品编号/原生专题id/wap专题链接）
+	广告类型（1、商品 2、原生专题 3、wap专题）
+top热销广告：
+	广告名称
+	广告指向（商品编号/原生专题id/wap专题链接）
+	广告类型（1、商品 2、原生专题 3、wap专题）
+	广告图片
+	广告结束时间
+	
+	
+接口名称：广告接口
+接口地址：<a href="http://122.11.49.7:8000/app2/advertising?seat=apptop/apphot">http://122.11.49.7:8000/app2/advertising?seat=apptop/apphot</a>
+
+请求参数：seat=apptop/apphot  （apptop:导航标题广告，apphot:热销图文广告）
+  
+
+导航广告返回结果：
+{
+  "code":1,
+  "message":"成功"
+  "data":
+  [
+     {        
+        "title":"广告标题",   
+		"link":"广告指向",//（商品编号/原生专题id/wap专题链接）
+        "type":1           //指向类型  1. 商品   2.app专题  3 wap专题   
+     },
+	 {        
+        "title":"广告标题",   
+		"link":"9100198",//
+        "type":1           //指向类型  1. 商品   2.app专题  3 wap专题       
+     },
+	 {        
+        "title":"广告标题",   
+		"link":"appzhuanti",//（商品编号/原生专题id/wap专题链接）
+        "type":2           //指向类型  1. 商品   2.app专题  3 wap专题         
+     },
+	 {        
+        "title":"广告标题",   
+		"link":"http://m.ghs.net/wapzhuanti1",//（商品编号/原生专题id/wap专题链接）
+        "type":3           //指向类型  1. 商品   2.app专题  3 wap专题         
+     }     
+  ]
+}
+
+
+
+热销广告返回结果：
+{
+  "code":1,
+  "message":"成功"
+  "data":
+  [
+     {        
+        "title":"广告标题",   
+		"link":"广告指向",//（商品编号/原生专题id/wap专题链接）
+        "type":1,           //指向类型  1. 商品   2.app专题  3 wap专题   
+		"image":http://www.ghs.net/ss.jpg , //广告图片
+		"time":2  //剩余时间
+     },
+	 {        
+        "title":"广告标题",   
+		"link":"广告指向",//（商品编号/原生专题id/wap专题链接）
+        "type":1,           //指向类型  1. 商品   2.app专题  3 wap专题   
+		"image":http://www.ghs.net/ss.jpg , //广告图片
+		"time":2  //剩余时间
+     },
+	{        
+        "title":"广告标题",   
+		"link":"广告指向",//（商品编号/原生专题id/wap专题链接）
+        "type":1,           //指向类型  1. 商品   2.app专题  3 wap专题   
+		"image":http://www.ghs.net/ss.jpg , //广告图片
+		"time":2  //剩余时间
+     }
+  ]
+}
+
+
+{
+  "code":0,
+  "message":"错误"
+}
+</html>

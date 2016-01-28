@@ -1,0 +1,38 @@
+</html>
+<head>
+<meta http-equiv="content-type"content="text/html;charset=utf-8">
+</head>
+<pre>
+接口名称：重置密码，手机
+接口地址：<a href="http://122.11.49.7:8000/app2/change_pw?mobile=13811522352&code=1234&password=abcdef">http://122.11.49.7:8000/app2/change_pw?mobile=13811522352&code=1234&password=abcdef </a>
+测试地址：change_pw.html
+<a href="./test_post.html">测试页面./test_post.htm</a>
+请求参数：
+mobile=13811522352
+code=1234
+password=abcdef
+password2=abcdef
+
+
+返回结果：
+{
+  "code":1,
+  "message":"成功"
+}
+
+
+{
+  "code":1131,
+  "message":"用户名或验证码为空"
+}
+
+{
+  "code":1101,
+  "message":"用户id不存在"
+}
+
+{
+  "code":1127,
+  "message":"短信校验码有误"
+}
+</html>

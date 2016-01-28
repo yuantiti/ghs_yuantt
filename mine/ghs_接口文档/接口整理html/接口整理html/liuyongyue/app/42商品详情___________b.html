@@ -1,0 +1,72 @@
+</html>
+<head>
+<meta http-equiv="content-type"content="text/html;charset=utf-8">
+</head>
+<pre>
+接口名称：商品详情
+接口地址：<a href="http://ectest.huanqiugo.com/product-app_productBaseInfo.html?merchant_id=123&sku=35456">http://ectest.huanqiugo.com/product-app_productBaseInfo.html?merchant_id=123&sku=35456</a>
+<a href="./test_post.html">测试页面./test_post.htm</a>
+请求参数：
+merchant_id=123
+sku=35456
+
+接口同时支持使用商品ID，merchant_id来加载，或者商品编号sku来加载，这2个是互斥的
+
+
+根据下面两个参数取库存和运费的信息，这2个字符可以为空，如果为空或者为0，服务器使用默认的地区和规格
+address_id=123   用户保存的地址ID
+spe=1    规格ID
+
+
+
+
+返回结果：
+{
+  "code":1,
+  "message":"成功"
+  "data":
+    {
+       "id":444, 商品ID
+       "sku":"123123", 商品编号，显示在界面上
+       "name":"万能清洁水枪1套",
+       "images":["http://test.com/1.png", "http://test.com/2.png"], 多图  640x480
+       "marked_price":123.78,   参考价
+       "brand":"史密斯",  品牌
+       "price":98.99,     环球价
+       "spe":[{"id":1, "name":"绿色XL"}, {"id":2, "name":"红色XL"}, {"id":3, "name":"红色XXL"}],   规格
+       "url":"http://test.com/1.html", 商品详情WEB页面,
+       "stock":123,  对应规格，对应地区的库存数量
+       全部"免运费"，写死
+       "is_stock":0 or 1,  0无存货，1有存货, ////// 新添加
+        "gift":赠品////// 新添加
+        "favorite": 0   是否是用户关注商品，1是，0否
+	"image":"http://test.com/商品缩略图.png",     200x200 ////// 新添加
+				"is_live":0   是否是直播商品，1是，0否
+				 "shipping_fee" : 0 //目前为0
+    }
+}
+
+{
+  "code":0,
+  "message":"错误"
+}
+
+
+ghs:
+接口地址 http://122.11.49.7:8000/app/productBaseInfo
+测试文件：productBaseInfo.html
+
+
+{
+  "code":1112,
+  "message":"商品编号为空"
+}
+{
+  "code":1113,
+  "message":"商品编号错误"
+}
+{
+  "code":1114,
+  "message":"商品已下架"
+}
+</html>

@@ -1,0 +1,129 @@
+【说明】
+首页的任何一个地方都能编辑，当然如果没有返回相关的数据就使用默认的
+在首页点击任何一个icon跳转的位置都可以指定
+首页其他模块，有的具有时效性，有的比较独立就不在这个接口返回，直接延用以前的，或者另起新接口
+
+model值说明：
+0，或者不传就表示使用默认的
+1，商品模版1，
+2，商品模版2，
+3，商品模版3，
+4，商品模版4，说明：跳转到web页面，然后再通过web页面跳转到商品详情，这样当现有的模版不能满足需求的时候，也可以解决问题，并且只有model值为4的时候我们才会去取url值
+5，直接跳转到商品详情
+6，秒杀列表，如果在秒杀接口中没有返回这个字段没有这个字段,那就默认跳转到秒杀列表
+title：该字段是当点击icon的时候跳转到模版后，模版要显示的标题，有需求的话也可以显示在icon上面
+type_id：种类id，当跳转到模板的时候，通过这个id取数据，这个id当model=5的时候就是商品id，其他的就是专题id，相当于以前的link，不用以前的link字段在于为了与ecStory的字段与字段意义保持一致
+
+
+【接口名称】首页主接口
+
+【接口地址】/app/appHome（建议主地址改成app3），
+
+【请求参数】无
+
+【返回数据】这些返回数据都是通过数组来区分的，这样服务器就不用维护返回数据的顺序，客户端也更加方便对首页进行模块化处理
+{
+  "data" : {
+	"carousel_data" : [//轮播图（焦点图）
+      {
+        "image" : "http://m.ghs.net/_assets/Www/lunbo/roban_lunbo_new.jpg",
+        "model" : 4,
+        "title" : "老板厨房电器专题",
+        "type_id" : "6789",
+        "url" : ""
+      },
+      {
+        "image" : "http://m.ghs.net/_assets/Event/531/531lunbo.jpg",
+        "model" : 2,
+        "title" : "周年庆收官献礼",
+        "type_id" : "6789",
+        "url" : ""
+      },
+      {
+        "image" : "http://m.ghs.net/_assets/Www/lunbo/maotai.jpg",
+        "model" : 2,
+        "title" : "茅台促销活动",
+        "type_id" : "6789",
+        "url" : ""
+      }
+    ],
+    "button_group" : [//轮播下面的按钮组，这些按钮都是可以配置的，可以是一个，2个以及多个，一排我们最多显示4个。
+      {
+        "image" : "http://m.ghs.net/_assets/Www/lunbo/roban_lunbo_new.jpg",
+        "model" : 0,
+        "title" : "惠金券",
+        "url" : ""
+      },
+      {
+        "image" : "http://m.ghs.net/_assets/Event/531/531lunbo.jpg",
+        "model" : 4,
+        "title" : "享赚钱",
+        "type_id" : "6789",
+        "url" : "/event/new_view/e2014513_one"
+      },
+      {
+        "type_id" : "454543",
+        "image" : "http://m.ghs.net/_assets/Www/lunbo/maotai.jpg",
+        "model" : 5,
+        "title" : "看吧",
+        "url" : ""
+      }
+    ],
+    
+    "carousel_text" : [//滚动的文字
+      {
+        "content" : "年中大促销啦,赶快召唤你的小伙伴一起嗨",
+        "model" : 4,
+        "theme" : "最新",
+        "type_id" : "6789",
+        "url" : "/appzhuanti1_product"
+      },
+      {
+        "content" : "年中大促销啦,赶快召唤你的小伙伴一起嗨",
+        "type_id" : "656453",
+        "model" : 5,
+        "theme" : "推荐",
+        "url" : ""
+      },
+      {
+        "content" : "年中大促销啦,赶快召唤你的小伙伴一起嗨",
+        "type_id" : "665422",
+        "model" : 2,
+        "theme" : "热门",
+        "url" : ""
+      }
+    ],
+    "duty_free_shop" : {
+      "type_id" : "654332",
+      "image" : "http://m.ghs.net/_assets/Www/lunbo/roban_lunbo_new.jpg",
+      "model" : 5,
+      "title" : "免税店",
+      "url" : ""
+    },
+    "image_group" : [//秒杀上面的图片组
+      {
+        "type_id" : "654332",
+        "image" : "http://m.ghs.net/_assets/Www/lunbo/roban_lunbo_new.jpg",
+        "model" : 5,
+        "title" : "手机专享",
+        "url" : ""
+      },
+      {
+        "type_id" : "765434",
+        "image" : "http://m.ghs.net/_assets/Event/531/531lunbo.jpg",
+        "model" : 5,
+        "title" : "新品首发",
+        "url" : ""
+      },
+      {
+        "type_id" : "454543",
+        "image" : "http://m.ghs.net/_assets/Www/lunbo/maotai.jpg",
+        "model" : 6,
+        "title" : "低价清仓",
+        "url" : ""
+      }
+    ]
+  },
+  "res" : "",
+  "rsp" : "succ"
+}

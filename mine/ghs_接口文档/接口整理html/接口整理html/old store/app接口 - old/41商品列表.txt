@@ -1,0 +1,36 @@
+接口名称：商品列表，此页面带翻页参数，见接口规范
+接口地址：/app2/productList
+
+
+请求参数：
+search_key=床   商品查询关键字
+category_id  商品分类ID
+order_key   排序的关键字
+
+关于 商品列表页面, 请求参数 order_key字段值设置为（new ：最新 -- 升序；new0:最新 -- 降序；price : 价格 -- 升序；price0：价格 -- 降序；sales : 销量 -- 升序； sales0 : 销量 -- 降序 ）
+
+last_id  当前商品页最后一个new_id,首页为空
+
+
+返回结果：
+{
+    "code": 1,
+    "message":"成功",
+    "data":
+[
+    {
+    	"new_id":查询数据新生成的id
+       "id":444, 商品id
+       "page_id":10,商品列表页码
+       "sku":"9101166",商品编号1
+       "name":"万能清洁水枪1套",
+       "image":"http://test.com/商品缩略图.png",     200x200
+       "marked_price":123.78,   参考价，如果为0，取price*1.2
+       "price":98,     环球价
+    }
+]
+}
+
+ghs:
+接口地址：http://122.11.49.7:8000/app/productlist
+测试地址：productlist.html

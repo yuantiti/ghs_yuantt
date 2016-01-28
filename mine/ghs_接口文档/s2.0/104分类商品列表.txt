@@ -1,0 +1,48 @@
+【说明】
+参见b2c.goods.search_properties_goods 根据筛选条件查询商品
+
+【接口名称】根据筛选条件查询商品接口
+
+
+【接口地址】
+			http://testec.ghs.net/index.php/api?method=b2c.goods.search_properties_goods&brand_id=21&sign=85998242530241E8FA7D66921BF42D4F
+【请求参数】
+参数	类型	是否必须	说明
+page_no	int	N	分页大小 默认为10
+page_size	int	N	商品id
+cat_id	int	Y/N	分类ID
+brand_id	int	Y/N	品牌ID [21,22,23]
+search_keywords	string	Y/N	关键字搜索
+//specs	json	N	根据商品规格查询 {“规格ID”:规格值,规格值}
+//props	json	N	根据商品属性查询 {“属性ID”:属性值,规格值}
+orderBy	string	N	排序方式默认为按时间排序
+
+【返回数据】
+{
+  "data" : {
+    "count" : "1",
+    "goods" : [
+      {
+        "bn" : "G4C85B42035681",
+        "brief" : "漆皮甜美小皮靴，可爱蝴蝶结",
+        "comments_count" : "0",
+        "default_product_id" : "241",
+        "goods_id" : "21",
+        "image" : {
+          "image_id" : "0f3f928f5efc8be86a1c50f1b5f2cb8e",
+          "l_url" : "http://pic.shopex.cn/pictures/eimages/f2ba403839c3b3e6c03f8c89f52af291aaced41be0.png",
+          "m_url" : "http://pic.shopex.cn/pictures/eimages/5dd2b6e1471a71351b6aaeb09949c17f9e9a6dfbc8.png",
+          "s_url" : "http://pic.shopex.cn/pictures/eimages/c1e730d4667b4f5f4be210c07e928032a3a1b857a8.png"
+        },
+        "image_default_id" : "0f3f928f5efc8be86a1c50f1b5f2cb8e",
+        "marketable" : "true",
+        "mktprice" : "298.000",
+        "name" : "漆皮甜美蝴蝶结小皮靴",
+        "price" : "128.000",
+        "store" : "98"
+      }
+    ]
+  },
+  "res" : "cc171e4399c8838d98934abec409d960",
+  "rsp" : "succ"
+}

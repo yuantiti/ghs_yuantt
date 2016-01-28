@@ -1,0 +1,13 @@
+【说明】
+
+
+【接口名称】获取商品收藏列表接口
+
+【接口地址】http://testec.ghs.net/index.php/api?method=product-app_favorite_list.html&user_id=42201&sign=66893035BFF05B41478225FF50587BF8
+			
+【请求参数】
+
+【返回数据】
+{    "data":  [    {       "id":444, 商品id       "page_id":10,商品列表页码       "sku":"9101166",商品编号1       "name":"万能清洁水枪1套",       "image":"http://test.com/商品缩略图.png",     200x200       "marked_price":123.78,   参考价，如果为0，取price*1.2       "price":98,     环球价    }  ],
+  "rsp":"succ",//标记请求成功
+  "res":"E0D99131B6ACB984B168DDBE94D980AA"}

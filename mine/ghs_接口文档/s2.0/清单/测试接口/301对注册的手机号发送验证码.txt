@@ -1,0 +1,54 @@
+测试：start
+http://ectest.huanqiugo.com/passport-app_send_vcode_sms.html?uname=18611877823&action=1
+start test
+成功返回
+{
+    "code": 1,
+    "status": true,
+    "message": "成功"
+}
+end test
+
+【说明】
+参见b2c.member.send_signup_sms
+http://testec.ghs.net/index.php/api?method=b2c.member.send_signup_sms&uname=15024908243&sign=2E6D1B573D3E89DEFB51348B0B8DBC37
+
+//业务逻辑需要改造
+ 		
+【接口名称】发送验证码接口
+
+【接口地址】
+
+【请求参数】
+uname	string	Y	手机号
+
+【返回数据】
+
+//发送成功
+{
+    "data": {
+        "message": "短信发送成功", 
+        "status": "true"
+    }, 
+    "rep": "succ",
+    "res" : "1A1C500B84447A826E288A84578BE10E"
+}
+
+//发送失败
+{
+    "data": {
+        "message": "短信发送失败,请稍后再试", 
+        "status": "false"
+    }, 
+    "rep": "fail"
+    "res" : "1A1C500B84447A826E288A84578BE10E"
+}
+//账号已经存在
+{
+  "data" : {
+    "message" : "该账号已经被占用，请换一个重试",
+    "status" : "false"
+  },
+  "rep" : "fail",
+  "res" : "1A1C500B84447A826E288A84578BE10E"
+}

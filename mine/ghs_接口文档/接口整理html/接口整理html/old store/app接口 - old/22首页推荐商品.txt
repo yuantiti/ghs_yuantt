@@ -1,0 +1,101 @@
+接口名称：首页推荐
+接口地址：/home/sales
+
+请求参数：
+  
+
+返回结果：
+{
+  "code":1,
+  "message":"成功"
+  "data":
+[
+    {
+       "title":"惠生活",
+       "title2":"SPECIAL  OFFERS",
+       "list":
+       [
+           {
+              "id":23, 活动ID
+              "title":"活动名称",
+              "image":"http://test.com/促销图片.png",  推荐png或者按照首页白底来做的jpg  推荐尺寸320x320最重要的宽高比不变
+              "sku":"12312"
+
+           },
+           {
+              "id":23, 活动ID
+              "title":"活动名称",
+              "image":"http://test.com/促销图片.png",  推荐尺寸320x160最重要的宽高比不变
+              "sku":"12312"
+           },
+           {
+              "id":23, 活动ID
+              "title":"活动名称",
+              "image":"http://test.com/促销图片.png",  推荐尺寸320x160最重要的宽高比不变
+              "merchant_sku":"12312"
+           }
+       ]
+    },
+    {
+       "title":"值得买",
+       "title2":"WORTH BUYING",
+       "list":
+       [
+           {
+              "id":23, 活动ID
+              "title":"活动名称",
+              "image":"http://test.com/促销图片.png",  推荐png或者按照首页白底来做的jpg  推荐尺寸320x320最重要的宽高比不变
+              "merchant_sku":"12312"
+
+           },
+           {
+              "id":23, 活动ID
+              "title":"活动名称",
+              "image":"http://test.com/促销图片.png",  推荐尺寸320x160最重要的宽高比不变
+              "merchant_sku":"12312"
+           },
+           {
+              "id":23, 活动ID
+              "title":"活动名称",
+              "image":"http://test.com/促销图片.png",  推荐尺寸320x160最重要的宽高比不变
+              "merchant_sku":"12312"
+           }
+       ]
+    },
+    {
+       "title":"品牌街",
+       "title2":"BRANDS STREET",
+       "list":
+       [
+           {
+              "id":23, 活动ID
+              "title":"活动名称",
+              "image":"http://test.com/促销图片.png",  推荐png或者按照首页白底来做的jpg  推荐尺寸320x320最重要的宽高比不变
+              "merchant_sku":"12312"
+
+           },
+           {
+              "id":23, 活动ID
+              "title":"活动名称",
+              "image":"http://test.com/促销图片.png",  推荐尺寸320x160最重要的宽高比不变
+              "merchant_sku":"12312"
+           },
+           {
+              "id":23, 活动ID
+              "title":"活动名称",
+              "image":"http://test.com/促销图片.png",  推荐尺寸320x160最重要的宽高比不变
+              "merchant_sku":"12312"
+           }
+       ]
+    }
+]
+
+}
+
+{
+  "code":0,
+  "message":"错误"
+}
+
+ghs:
+接口地址：http://122.11.49.7:8000/app/homespecial

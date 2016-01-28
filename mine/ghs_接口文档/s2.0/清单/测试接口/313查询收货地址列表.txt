@@ -1,0 +1,78 @@
+﻿参见 b2c.member.get_address 
+
+localhost/index.php/api?method=b2c.member.get_address&member_id=11295&sign=3E9F4FCB31B87B66AB5A8B1FABF11E62
+stoken 
+码  $token = 'f636f9f48eeeead453289e5254e37067a3ee934bc0340386d9b7c9f544bfbc3d';
+
+{
+    
+     "rsp": "succ",
+    
+    "data": [
+ {
+          
+    "ship_id": "61",
+          
+    "ship_name": "测试",
+           
+    "ship_area": "mainland:北京市/北京市/朝阳区:110105",
+          
+    "ship_addr": "测试",
+        
+    "ship_zip": null,
+          
+    "ship_tel": null,
+            
+    "ship_mobile": "18511380532",
+            
+    "is_default": "true"
+      
+     }
+    ],
+  
+    "res": ""
+
+
+}
+
+
+【接口名称】查询收货地址列表接口
+测试成功返回数据
+
+
+//需求
+【接口地址】
+
+
+【请求参数】
+参数类型是否必须说明
+member_idintY会员ID
+
+【返回数据】
+
+{
+    "rsp": "succ", 
+    "data": [
+        {
+            "ship_id": "9", 
+            "ship_name": "子夜", 
+            "ship_area": "mainland:上海/上海市/徐汇区:25", 
+            "ship_addr": "上海上海sss", 
+            "ship_zip": "100000", 
+            "ship_tel": "null", 
+            "ship_mobile": "15021391235", 
+            "is_default": "true"
+        }, 
+        {
+            "ship_id": "10", 
+            "ship_name": "叶林", 
+            "ship_area": "mainland:北京/北京市/东城区:3", 
+            "ship_addr": "北京北京", 
+            "ship_zip": " 100000", 
+            "ship_tel": "null", 
+            "ship_mobile": "15021391234", 
+            "is_default": "false"
+        }
+    ], 
+    "res": "EF6CA42B0A9B4B39E64B15EDC5726987"
+}

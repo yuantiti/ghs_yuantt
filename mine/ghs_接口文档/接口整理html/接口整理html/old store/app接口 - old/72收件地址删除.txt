@@ -1,0 +1,42 @@
+接口名称：删除收件地址
+接口地址：http://122.11.49.7:8000/appHome/addressDel
+
+请求参数：
+address_id=234
+
+返回结果：
+{
+  "code":1,
+  "message":"成功"
+}
+
+{
+  "code":0,
+  "message":"错误"
+}
+
+
+ghs:
+添加请求参数 user_id
+接口地址 http://122.11.49.7:8000/appHome/addressDel
+测试文件：addressDel.html
+
+{
+  "code":1100,
+  "message":"没有接收到用户id"
+}
+
+{
+  "code":1101,
+  "message":"用户id不存在"
+}
+
+{
+  "code":1102,
+  "message":"没有接收到address_id"
+}
+
+{
+  "code":1111,
+  "message":"不存在的地址"
+}

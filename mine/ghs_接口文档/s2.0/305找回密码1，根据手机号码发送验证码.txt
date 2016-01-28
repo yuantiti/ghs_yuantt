@@ -1,0 +1,25 @@
+【说明】
+参见 b2c.member.lost_send_vcode
+
+【接口名称】找回密码（根据手机号码发送验证码）接口1
+
+【接口地址】
+			http://testec.ghs.net/index.php/api?method=b2c.member.lost_send_vcode&mobile=15024908243&sign=F5B04169A5D1BEFE9A768FE95485133B
+【请求参数】
+参数	类型	是否必须	说明
+mobile	string	Y	        发送找回密码的验证码，并且判断该手机号是否已经注册
+
+【返回数据】
+{
+    "data":"", 
+    "res": "succ"
+}
+//失败返回的数据
+{
+    "data": {
+        "message": "短信发送失败", 
+        "status": "false"
+    }, 
+    "res": "fail"
+}
+

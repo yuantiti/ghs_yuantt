@@ -1,0 +1,22 @@
+【说明】
+
+
+【接口名称】购物车商品数量增减接口
+
+【接口地址】http://ectest.huanqiugo.com/cart-app_cartChange.html?cart_id=1&count=22
+
+【请求参数】
+cart_id:
+count:
+
+【返回数据】{   "data":   {         "total_price":299.00       "total_count":3    商品总数量   }   "rsp":"succ",//标记请求成功
+   "res":"E0D99131B6ACB984B168DDBE94D980AA"
+}//失败
+{
+	"data":{
+  		"message":"4334,32234,5445",//服务端返回的消息，要注意的是当返回失败以后，这个值不为空的情况下客户端就默认要给客户显示这个信息
+             	"status":false
+		},
+	"rsp":"fail",
+	"res":"E0D99131B6ACB984B168DDBE94D980AA"
+}

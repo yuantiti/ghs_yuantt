@@ -1,0 +1,37 @@
+接口名称：重置密码第一步，验证会员名
+接口地址：http://122.11.49.7:8000/app2/check_user
+测试地址：check_user.html
+
+请求参数：
+account=majianglin   会员名，邮箱，手机
+code=1234
+
+
+返回结果：
+{
+  "code":1,
+  "message":"成功"
+  "data":
+  {
+      "mobile":"13811522352"
+	  "email":"majianglin@163.com"
+	  "user_id":123
+  }
+}
+
+
+{
+  "code":1100,
+  "message":"没有接收到用户id"
+}
+
+{
+  "code":1101,
+  "message":"用户id不存在"
+}
+
+{
+  "code":1125,
+  "message":"验证码错误"
+}
+

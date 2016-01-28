@@ -1,0 +1,31 @@
+【说明】
+这个接口具有实时性，独立出来
+model值可以不传，默认跳转到商品详情，如果要跳转到其他地方请参照001首页主接口
+
+【接口名称】首页TV直播接口
+
+【接口地址】/app/homeTvLive
+
+【请求参数】无
+
+【返回数据】
+{
+  "data" : {
+    "beijing_live" : {
+      "image" : "http://m.ghs.net/_product_assets/3123/default_3123_55c85c89d57f48.69788127.jpg",
+      "model" : 5,
+      "title" : "BC名模神美裤4件组",
+      "price" : "399.00",
+      "type_id" : 9107436
+    },
+    "china_live" : {
+      "image" : "http://m.ghs.net/_product_assets/3123/default_3123_55c85c89d57f48.69788127.jpg",
+      "model" : 5,
+      "title" : "BC名模神美裤4件组",
+      "price" : "399.00",
+      "type_id" : 9107436
+    }
+  },
+  "res" : "",
+  "rsp" : "succ"
+}

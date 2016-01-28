@@ -1,0 +1,15 @@
+首页接口说明：
+首页内容：   //TOP热销、TV直播、团购、促销、秒杀、海外购、上新、榜单、荐食记、阅视无线
+汇精品  ，TV榜    ，环球团 ，新品到 ，悦活动 ，荐食记 ，遥控器
+
+模块			接口地址							相关文档
+焦点图			/homefocus							20首页焦点.txt
+tv直播			/indextv							22首页直播商品.txt
+环球团			/tuangou							22团购接口.txt
+tv直播下方广告  /advertising   post seat=apptv		21首页广告接口.txt
+促销			/advertising   post seat=appcuxiao	21首页广告接口.txt
+汇精品			/advertising   post seat=apphuijingpin	21首页广告接口.txt
+悦活动			/advertising   post seat=appyuehuodong	21首页广告接口.txt
+新品到			/advertising   post seat=appxinpindao	21首页广告接口.txt
+荐食记			/advertising   post seat=appjianshiji	21首页广告接口.txt
+遥控器			/advertising   post seat=appyaokuqi	21首页广告接口.txt

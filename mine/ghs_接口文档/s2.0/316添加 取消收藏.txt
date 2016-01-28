@@ -1,0 +1,26 @@
+【说明】
+
+
+【接口名称】添加取消收藏接口
+
+【接口地址】
+			http://testec.ghs.net/index.php/api?method=product-app_favorite.html&product_id=123&sign=AD284D57DB850EA4905FEE8DBA6BFE8F
+【请求参数】
+product_id=123,456,789  逗号分隔多个
+favorite＝1   0取消关注 1关注
+
+【返回数据】{
+	"data":"",//返回的数据都在这里处理
+	"rsp":"succ",//标记请求成功
+	"res":"E0D99131B6ACB984B168DDBE94D980AA"
+}
+
+//失败
+{
+	"data":{
+  		"message":"4334,32234,5445",
+             	"status":false
+		},
+	"rsp":"fail",
+	"res":"E0D99131B6ACB984B168DDBE94D980AA"
+}

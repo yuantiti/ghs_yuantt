@@ -1,0 +1,24 @@
+【说明】
+
+
+【接口名称】添加商品到购物车接口
+
+【接口地址】
+
+【请求参数】
+product_id
+count
+
+【返回数据】
+{
+	"data":{  //不返回数据也没关系      	 "total_price":299.00      	 "total_count":3    //商品总数量   	},
+	"rsp":"succ",
+	"res":"E0D99131B6ACB984B168DDBE94D980AA"
+}{
+	"data":{
+  		"message":"添加失败",
+		"status":false
+		},	
+	"rsp":"fail",
+	"res":"E0D99131B6ACB984B168DDBE94D980AA"
+}

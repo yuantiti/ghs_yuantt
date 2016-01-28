@@ -1,0 +1,21 @@
+【说明】
+
+
+【接口名称】获取购物车信息接口
+
+【接口地址】http://ectest.huanqiugo.com/cart-app_cart.html
+
+【请求参数】
+
+【返回数据】{  "data":  {      "total_price":299.00      "total_count":3    商品总数量      "shipping_fee" : 0 //目前为0      "items"     [        {           "cart_id":"444", //购物车id,一定要加引号           "sku":"9101166",商品编号           "name":"万能清洁水枪1套",           "image":"http://test.com/商品缩略图.png",     200x200           "marked_price":123.78,   参考价，如果为0，取price*1.2           "price":98,     环球价           "product_id":1,//唯一区分的值           "spe_name":"绿色XL"           "count":2  数量2件           "subtotal_price": 单项总价                   }     ]   },
+   "rsp":"succ",//标记请求成功
+   "res":"E0D99131B6ACB984B168DDBE94D980AA"
+}//失败
+{
+	"data":{
+  		"message":"4334,32234,5445",//服务端返回的消息，要注意的是当返回失败以后，这个值不为空的情况下客户端就默认要给客户显示这个信息
+             	"status":false
+		},
+	"rsp":"fail",
+	"res":"E0D99131B6ACB984B168DDBE94D980AA"
+}

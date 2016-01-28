@@ -1,0 +1,60 @@
+接口名称：物流查询
+接口地址：http://122.11.49.7:8000/app2/orderForm
+
+请求参数：
+order_no=123  咱们系统的订单号
+  
+
+返回结果：
+{
+  "code":1,
+  "message":"成功"
+  "data":
+    {
+       "id":123  订单ID
+       "order_no":"123123", 订单号
+       "merchant_list"
+[
+    {
+       "id":444,
+       "name":"万能清洁水1套",
+       "image":"http://test.com/缩略图.png", 200x200
+       "price":299,
+       "count":2
+    },
+    {
+       "id":444,
+       "name":"万能清洁水1套",
+       "image":"http://test.com/缩略图.png", 200x200
+       "price":299,
+       "count":2
+    }
+]
+       "delivery_company":"顺风快递",
+       "delivery_number":"2323490234",
+       "track_history":
+       [
+          {
+             "time":"2014-08-10 06:58",
+             "desc":"快件在北京，准备送往下一站"
+          },
+          {
+             "time":"2014-08-10 06:58",
+             "desc":"快件在北京集散中心"
+          },
+          {
+             "time":"2014-08-10 06:58",
+             "desc":"已收件"
+          }
+       ]
+    }
+}
+
+{
+  "code":0,
+  "message":"错误"
+}
+
+ghs:
+接口地址：http://122.11.49.7:8000/app/orderForm
+测试地址：orderForm.html

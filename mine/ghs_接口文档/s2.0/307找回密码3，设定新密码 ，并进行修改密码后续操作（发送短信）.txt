@@ -1,0 +1,34 @@
+﻿【说明】
+参见 b2c.member.lost_reset_password
+
+【接口名称】找回密码（设定新密码）接口3
+
+【接口地址】
+			http://testec.ghs.net/index.php/api?method=b2c.member.lost_reset_password&member_id=1&sign=EF4B99065642AA3A82E21C6AD0B5F00B
+【请求参数】
+参数	类型	是否必须	说明
+member_id	int	Y			会员ID
+lost_token	string	Y		短信验证后返回的token     //需要传值
+password	string	Y		设定的新密码（加密后的密码）
+
+【返回数据】
+{
+	"data":{
+			//转为json
+			[message] => 短信验证成功
+            [status] => true
+            [member_id] => 20
+            [lost_token] => s35a6c0509511f5cba78637b600f3971
+			
+	}
+		"res":"succ",
+		"rep":"fail"
+		
+	{
+    "data": {
+        "message": "密码修改成功", 
+        "status": "true"
+    }, 
+    "rep": "fail",
+	"res":"succ"
+}

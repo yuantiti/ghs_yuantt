@@ -1,0 +1,56 @@
+</html>
+<head>
+<meta http-equiv="content-type"content="text/html;charset=utf-8">
+</head>
+<pre>
+接口名称：订单详情
+<a href="http://ectest.huanqiugo.com/member-app_orderdetail.html?order_id=123">http://ectest.huanqiugo.com/member-app_orderdetail.html?order_id=123</a>
+接口地址：/app2/orderdetail
+<a href="./test_post.html">测试页面./test_post.htm</a>
+请求参数：
+order_id=123
+order_no＝"123123"
+
+
+返回结果：
+{
+  "code":1,
+  "message":"成功"
+  "data":
+    {
+       "id":444, 订单ID
+       "order_no":"123123", 订单号
+       "time":"2014-08-17 22:23",
+       "status":1,               订单状态
+       “cancel”:1  //1.可以取消订单，0不可以取消订单
+       "pay_type":1,               支付方式
+       "merchant_list":
+       [
+          {
+              "id":"清洁水枪1套",
+              "name":"清洁水枪1套",
+              "count":2,
+              "image":"http://test.com/缩略图.png", 200x200
+              "price":299,
+          },
+          {
+              "id":"清洁水枪1套",
+              "name":"清洁水枪1套",
+              "count":2,
+              "image":"http://test.com/缩略图.png", 200x200
+              "price":299,
+          }
+       ]
+        全部客户端写死 "免运费"
+       "total_price":598,    服务器计算总价格
+       "real_name":"马江林",
+       "address":"北京市海淀区圆明园西路3号院4号楼907,10086"  ，服务器拼好
+       "telephone":"13811522352"
+    }
+}+
+
+{
+  "code":0,
+  "message":"错误"
+}
+</html>

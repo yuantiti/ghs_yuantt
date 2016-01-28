@@ -1,0 +1,38 @@
+【说明】
+参见 b2c.member.get_address 
+
+【接口名称】查询收货地址列表接口
+
+【接口地址】
+
+【请求参数】
+参数	类型	是否必须	说明
+member_id	int	Y	会员ID
+
+【返回数据】
+{
+    "rsp": "succ", 
+    "data": [
+        {
+            "ship_id": "9", 
+            "ship_name": "子夜", 
+            "ship_area": "mainland:上海/上海市/徐汇区:25", 
+            "ship_addr": "上海上海sss", 
+            "ship_zip": "100000", 
+            "ship_tel": "null", 
+            "ship_mobile": "15021391235", 
+            "is_default": "true"
+        }, 
+        {
+            "ship_id": "10", 
+            "ship_name": "叶林", 
+            "ship_area": "mainland:北京/北京市/东城区:3", 
+            "ship_addr": "北京北京", 
+            "ship_zip": " 100000", 
+            "ship_tel": "null", 
+            "ship_mobile": "15021391234", 
+            "is_default": "false"
+        }
+    ], 
+    "res": "EF6CA42B0A9B4B39E64B15EDC5726987"
+}
