@@ -1,0 +1,31 @@
+git add
+git commit
+git diff
+git status
+git log
+git reflog
+git reset --hard HEAD^
+git reset HEAD 
+git rm 
+git checkout -- 
+
+
+
+ssh-keygen -t rsa -C "email@example.com"
+git remote add origin url
+
+git push -u origin master
+
+why red 
+
+git branch dev
+git checkout dev
+git checkout -b dev
+
+git branch
+
+<<<<<<< HEAD
+solve problems
+=======
+solve problem
+>>>>>>> tiktop
